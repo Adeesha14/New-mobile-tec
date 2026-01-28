@@ -199,37 +199,36 @@
                 </ul>
 
                 <p>
-                    Choose color:
-                    <select>
-                        <option>Select color</option>
-                        <option>orange</option>
-                        <option>Black</option>
-                        <option>Green</option>
-                </p>
+                        <label for="color-select">Color:</label>
+                        <select id="color-select">
+                            <option value="Titanium Black">Titanium Black</option>
+                            <option value="Natural Titanium">Natural Titanium</option>
+                            <option value="White">White</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="qty-input">Qty:</label>
+                        <input type="number" id="qty-input" value="1" min="1">
+                    </p>
 
-                <p>
-                    Quantity:
-                    <input type="number" value="1" min="1">
-                </p>
+                    <button id="phone-001" data-id="Blackviwe 6200" data-name="Blackviwe 6200" data-price="40,000"
+                        data-img="Black viwe/BV6200pro.webp">
+                        <span class="fa fa-shopping-cart"></span>
+                        Add to Cart
+                    </button>
 
-                <button>
-                    <span class="fa fa-shopping-cart"></span>Add To Cart
-                </button>
 
-                <button class="buy">
-                    <span class="fa fa-shopping-cart"></span>Buy Now
-                </button>
+
+                    <button class="buy">
+                        <span class="fa fa-shopping-cart"></span>Buy Now
+                    </button>
+                </div>
             </div>
+
         </div>
-
     </div>
-</div>
 
-<script>
-    function clickimg(smallimg){
-        document.getElementById("imagebox").src = smallimg.src;
-    }
-</script>
-
+    <script src="phonecart.js"></script>
 </body>
+
 </html>
