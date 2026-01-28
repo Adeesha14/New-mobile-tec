@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE TECH </title>
+</head>
+
+<body>
+
+<!-- task bar -->
+  <section>
+      <style>
+        .logo {
+          width: 150px;
+          height: 100px;
+        }
+        /*marquee*/
+        .marquee{
+            width: 100%;
+            height: 50px;;
+        }
+        .marquee p{
+            animation: scroll-left 20s linear infinite;
+        }   
+        @keyframes scroll-left {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+
+        }
+        #mar{
+            background-image: url("../projectimage/bc.jpeg");
+            background-size:cover;
+            font-size : 60px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255);
+            font-weight:bold;
+            width: 100%;
+        }
+
+        .body{
+            background-image: url(gradient.jpg.jpeg);
+        }
+        nav ul li a{
+            color: rgb(255, 255, 255);
+            padding: 26px;
+            text-decoration: none;
+            text-align: center;
+
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            padding: 10px;
+            background-color: rgb(180, 86, 199);
+            font-size: 15pt;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: static;
+            border: 2px solid black;
+            width: 1250 px;
+            justify-content: space-between;
+            font-weight: bold;
+            
+        }
+        nav ul li a:hover {
+            color: rgb(0, 0, 0);
+            height: 100px;
+        }
+        .sign {
+            display:flex
+        }
+
+        nav:hover .sign {
+            display: block;
+        }
+
+        .main {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .searchbar {
+            padding: 15.5px;
+            width: 350px;
+
+        }
+
+        .row2 {
+            text-align: justify;
+            padding: 20px;
+            display: flex;
+            padding-left: 50px;
+        }
+        .searchb{
+            padding-left: 70px;
+        }
+        .logob {
+            width: 20%;
+        }
+
+        .search {
+            width: 40%;
+            text-align: center;
+        }
+
+        .location1 {
+            padding-left: 50px;
+            width: 1%;
+        }
+        .locarea1{
+            width: 15%;
+            padding-top: 2px;
+            
+            height: 20px;
+        }
+        .location2{
+            width: 1%;
+            padding-left: 70px;
+        }   
+        .arimen, .smart2 {
+            background-color: rgb(180, 86, 199);
+            border: 0px;
+            display: flex;
+            flex-direction: row;
+            font-size: 18px;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .arimen, .smart2 {
+            color: white;
+            font-size: 18px;
+            height: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .arimen:hover, .smart2:hover{
+            color: black;
+        }
+
+        .ari2, .smart4 {
+            border: 0;
+            padding-left: 10px;
+
+        }
+
+        .arival, .smart1 {
+            height: 20px;
+            border: 0;
+            font-size: 50px;
+            background-color: rgb(180, 86, 199);
+            padding: 0%;
+            padding-top: 4px;
+        }
+        .aridown, .smartdown{
+            display: none;
+            position: absolute;
+            background-color: rgb(180, 86, 199);
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .aridown a, .smartdown a, .audio3 a{
+            
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .arril, .smart{
+            position: relative;
+            display: inline-block;
+        }
+        .arril:hover, .smart:hover{
+            background-color: rgb(180, 86, 199);
+        }
+        .aridown a:hover ,.smartdown a:hover, .audio3 a:hover{
+            background-color: rgb(180, 86, 199);
+            color: black;
+        }
+        .arril:hover .aridown, .smart:hover .smartdown{
+            display: block;
+        }
+        .aud, .acc, .us, .log, .cart{
+            font-size: 18px;
+            background-color: rgb(180, 86, 199);
+            border: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .aud a, .acc a, .us a, .log a, .cart a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .aud a:hover, .acc a:hover, .us a:hover, .log a:hover, .cart a:hover{
+            color: black;
+        }
+      </style>
+      <div class="main">
+          <div class="logob">
+              <img src="../projectimage/logo/logo.jpg.jpeg" alt="Phone Shop Logo" class="logo">
+          </div>
+          <div class="search">
+              <form>
+                  <div class="row2">
+                      <div class="searchb">
+                          <input class="searchbar" type="text" placeholder="Search..">
+                      </div>
+                      <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                              class="bi bi-search" viewBox="0 0 16 16"
+                              style="padding: 10px; background-color:  rgba(123, 13, 145, 0.785);">
+                              <path
+                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                          </svg>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          <div class="location1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16" style="padding: 20px;">
+                  <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+              </svg>
+          </div>
+          <div class="locarea1">
+              <h2>Matara<br>0785416253</h2>
+          </div>
+
+          <div class="location2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16" style="padding: 20px;">
+                  <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+              </svg>
+          </div>
+          <div class="locarea1">
+              <h2>Colombo<br>0785416254</h2>
+          </div>
+      </div>
+      <div class="marquee" id="mar">
+          <p>Phone Shop</p>
+      </div>
+
+      <nav>
+          <div id="navbar">
+              <ul class="menu">
+                  <div class="arril">
+                      <button class="arival">
+                          <div class="arimen">
+                              <div class="ari1">
+                                  <b>New Arrivals</b>
+                              </div>
+                              <div class="ari2">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                      class="bi bi-caret-down" viewBox="0 0 16 16">
+                                      <path
+                                          d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                                  </svg>
+                              </div>
+                          </div>
+                      </button>
+                      <div class="aridown">
+                          <a href="#">Mobaile Phones</a>
+                          <a href="#">Aoudio Divice</a>
+                      </div>
+                  </div>
+                  <div class="smart">
+                      <button class="smart1">
+                          <div class="smart2">
+                              <div class="smart3">
+                                  <b>Smart Phones</b>
+                              </div>
+                              <div class="smart4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                      class="bi bi-caret-down" viewBox="0 0 16 16">
+                                      <path
+                                          d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                                  </svg>
+                              </div>
+                          </div>
+                      </button>
+                      <div class="smartdown">
+                          <a href="apple.html">Apple iPhone</a>
+                        <a href="blackviwe.html">Blackviwe</a>
+                        <a href="honner.html">Honor</a>
+                        <a href="motarola.html">Motorola</a>
+                        <a href="oppo.html">Oppo</a>
+                        <a href="realme.html">Realme</a>
+                        <a href="redme.html">Xiaomi / Redme</a>
+                        <a href="samsung.html">Samsung</a>
+                        <a href="tecno.html">Tecno</a>
+                        <a href="tlc.html">TLC</a>
+                        <a href="vivo.html">Vivo</a>
+                        <a href="zte.html">ZTE</a>
+                      </div>
+                  </div>
+                  
+                  <button class="aud"><a href=""><b>Audio</b></a></button>
+                  <button class="acc"><a href=""><b>Accessories</b></a></button>
+                  <button class="us"><a href="#about-section" ><b>About Us</b></a></button>
+                  <button class="log">
+                      <a href="login_form.html">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                              class="bi bi-person-circle" viewBox="0 0 16 16">
+                              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                              <path fill-rule="evenodd"
+                                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                          </svg>
+                      </a>
+                  </button>
+                  <button class="cart">
+                      <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                              class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd"
+                                  d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                          </svg>
+                      </a>
+                  </button>
+              </ul>
+          </div>
+      </nav>
+            <script type="text/javascript">
+          function signIn() {
+              var username = prompt("Please enter your username", "Username");
+              var password = prompt("Please enter your password", "Password");
+
+              if (username && password) {
+                  // Redirect to signin.html only if username and password are entered
+                  window.location.href = "signin.html";
+              } else {
+                  alert("You must enter both username and password!");
+              }
+          }
+      
+      </script>
+  </section>
+
+<!-- main heading -->
+  <section>
+    <style>
+      .main-heading h1 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 700;
+      }
+
+      .main-heading {
+          margin-top: 80px;
+      }
+
+      .main-heading h1 {
+          color: #1a1a1a;
+      }
+
+  .container{
+      width: 100%;
+      padding-right: var(--bs-gutter-x, .75rem);
+      padding-left: var(--bs-gutter-x, .75rem);
+      margin-right: auto;
+      margin-left: auto;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 50px; /* This adds some space above the text */
+  }
+    </style>
+  <div class="main-heading">
+              <div class="container">
+                  <div class="row" text-center>
+                      <div class="offset-md-2 col-md-8 text-center">
+                          <h1>Shop the Latest Mobile Phones in <br>Sri Lanka at Mobile TECH</h1>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </section>
+
+<!-- list of items -->
+  <section>
+  <style>
+    .product-category-row {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    }
+
+    .item-card {
+        background-color: #f6f6f6;
+        border-radius: 12px;
+        width: 300px;
+        height: 350px;
+        padding: 20px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .item-card:hover {
+        background-color: #f0f0f0;
+        transform: translateY(-2px);
+    }
+
+    .img-box {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+
+    .img-box img {
+        max-width: 320px;
+        max-height: 500px;
+        object-fit: contain;
+        
+    }
+
+    .item-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .item-info span {
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .arrow-circle {
+        background: #000;
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+  </style>
+
+  <div class="product-category-row">
+      <a href="smartphones.HTML" class="item-card">
+          <div class="img-box">
+              <img src="../projectimage/logo/17-pro-max-front-page-.jpg" alt="Smartphones">
+          </div>
+          <div class="item-info">
+              <span>Smartphones</span>
+          </div>
+      </a>
+
+      <a href="#" class="item-card">
+          <div class="img-box">
+              <img src="../projectimage/logo/MARSHALL-FRONT-PAGE-2.jpg" alt="Speakers">
+          </div>
+          <div class="item-info">
+              <span>Speakers</span>
+          </div>
+      </a>
+
+      <a href="#" class="item-card">
+          <div class="img-box">
+              <img src="../projectimage/logo/category_3.webp" alt="Earphones">
+          </div>
+          <div class="item-info">
+              <span>Earphones</span>
+          </div>
+      </a>
+
+      <a href="#" class="item-card">
+          <div class="img-box">
+              <img src="../projectimage/logo/watch-front.jpg" alt="Smart Watches">
+          </div>
+          <div class="item-info">
+              <span>Smart Watches</span>
+          </div>
+      </a>
+  </div>
+
+    <script>
+      // Simple interaction logic to log which item was clicked
+      document.querySelectorAll('.item-card').forEach(item => {
+      item.addEventListener('click', (e) => {
+        const category = item.querySelector('span').innerText;
+        console.log(`User clicked on: ${category}`);
+      });
+      });
+
+    </script>
+</section>
+
+<!-- hot pics -->
+<section class="hot-picks">
+ <style>
+    
+    .hot-picks {
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 2rem;
+    }
+
+    /* The scrollable container */
+    .slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    /* Smooth snapping effect */
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    }
+
+    /* Hide scrollbar for Chrome/Safari */
+    .slider-container::-webkit-scrollbar {
+    display: none;
+    }
+
+    /* Individual Card Styling */
+    .card {
+    flex: 0 0 80%; /* Shows 80% of card width, hinting at the next one */
+    max-width: 300px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    }
+
+    .card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    }
+
+    /* Text Overlay */
+    .card-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+ </style>   
+  <h2>Hot Picks</h2>
+  <div class="slider-container">
+    <div class="card">
+      <img src="../projectimage/galaxys25.jpeg" alt="Galaxy S25 Ultra">
+      <div class="card-label">Galaxy S25 Ultra</div>
+    </div>
+    <div class="card">
+      <img src="../projectimage/iphone17pro.jpeg" alt="Iphone 17 Pro">
+      <div class="card-label">Iphone 17 Pro</div>
+    </div>
+    <div class="card">
+      <img src="../projectimage/ONEPLUS15.jpeg" alt="Oneplus 15 ">
+      <div class="card-label">Oneplus 15</div>
+    </div>
+    <div class="card">
+      <img src="../projectimage/realme16pro.jpeg" alt="RealMe 16 Pro">
+      <div class="card-label">RealMe 16 Pro</div>
+    </div>
+    <div class="card">
+      <img src="../projectimage/googlepixel10pro.jpeg" alt="Google Pixel 10 Pro ">
+      <div class="card-label">Google Pixel 10 Pro</div>
+    </div> 
+  </div>
+
+    <script>
+        // Simple function to scroll the container
+        function scrollNext() {
+        const container = document.querySelector('.slider-container');
+        container.scrollBy({ left: 300, behavior: 'smooth' });
+         }
+    </script>
+</section>    
+
+
+<!-- 4 photos show-->
+  <section>
+  <style>
+
+      .product-grid {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 500px 280px 280px; /* 3 columns */
+        grid-template-rows: auto auto;       /* 2 rows */
+        gap: 15px;
+        padding: 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .content{
+        display: flex;
+        justify-content:center;
+        align-items: center; 
+      }
+
+      .large-card {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3; 
+        background-color: #f5f5f5;
+      }
+
+      .wide-card {
+        grid-column: 2 / 4; 
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+      }
+
+      .grid-item {
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px;
+        position: relative;
+      }
+
+      .grid-item img {
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+      }
+      .grid-item large-card{
+          width: 400px;
+          height: 400px;
+      }
+      .grid-item small-card orange-bg{
+      width: 200px;
+          height: 200px;
+      }
+
+      .grid-item small-card light-bg{
+      width: 200px;
+          height: 200px;
+      }
+      .grid-item wide-card teal-bg{
+      width: 200px;
+          height: 200px;
+      }
+
+      .main-bg   {background-color:  rgb(184, 184, 184);}
+      .orange-bg { background-color: rgb(184, 184, 184); }
+      .light-bg  { background-color: rgb(155, 155, 155); }
+      .teal-bg   { background-color: rgb(161, 161, 161); } 
+
+      @media (max-width: 768px) {
+        .product-grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+        .large-card, .wide-card {
+          grid-column: auto;
+          grid-row: auto;
+        }
+      }
+  </style>
+
+  <div class="product-grid">
+    <div class="grid-item large-card main-bg">
+      <div class="content">
+        <img src="../projectimage/4 show/a1.jpg"  Titan Black Phone>
+      </div>
+    </div>
+
+    <div class="grid-item small-card orange-bg">
+      <img src="../projectimage/4 show/a2.jpg" alt="Fire TV">
+    </div>
+
+    <div class="grid-item small-card light-bg">
+      <img src="../projectimage/4 show/a3.jpg" alt="Pixel 9">
+    </div>
+
+    <div class="grid-item wide-card teal-bg">
+      <div class="content">
+        
+      <img src="../projectimage/4 show/a4.jpg" alt="Apple Watch">
+      
+
+    </div>
+  </div>
+
+      <script>
+              const cards = document.querySelectorAll('.grid-item');
+
+        cards.forEach(card => {
+          card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-5px)';
+            card.style.transition = '0.3s ease';
+            card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+          });
+
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+            card.style.boxShadow = 'none';
+          });
+        });
+      </script>
+  </section>
+
+<!-- brand logos-->
+<section class="brand-section">
+  <style>
+    .full-width {
+    background-color: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: auto;
+}
+
+.brand-section {
+    padding: 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand-section h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+.brand-item-single {
+    background: #ffffff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    transition: transform 0.3s ease;
+}
+
+.brand-item-single:hover {
+    transform: translateY(-5px);
+}
+
+.brand-item-single img {
+    max-width: 200%;
+    max-height: 80px;
+    object-fit:contain;
+}
+
+.full-width {
+    grid-column: span 4;
+}
+
+@media (max-width: 768px) {
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .full-width {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .full-width {
+        grid-column:span 1;
+        width: 100px;
+    }
+}
+  </style>
+        <h2><i><b>Authorized Dealer for Leading Mobile Brands</b></i></h2>
+
+        <div class="brand-grid">
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/apple-logo.webp" alt="Apple">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/samsung-logo.webp" width="80%" height="60%" alt="Samsung">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/mi-logo.webp" alt="Xiaomi">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/oppo-logo.webp" alt="Oppo">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/huawei-logo.webp" alt="Huawei">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/poco-logo.webp" alt="Poco">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/realme-logo.webp" alt="Realme">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/alcatel-logo.webp" alt="Alcatel">
+            </div>
+            <div class="brand-item-single full-width">
+                <img src="../projectimage/logo/kingston-logo.webp" alt="Kingston">
+            </div>
+        </div>
+</section>
+
+<!-- About us -->
+  <section id="about-section">
+  <style>
+    .body{
+        width:auto;
+        margin: 80px;
+        height:fit-content;
+    }
+    .footer {
+        display:flex;
+        justify-content: space-between;
+        width:1300px;
+        padding: 40px;
+        background: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      
+      .footer-left, .footer-middle, .footer-right {
+        flex: 1;
+        padding: 10px;
+      }
+      
+      .footer-left p {
+        line-height: 1.4;
+        text-align: left;
+        width: 80%;
+      }
+      
+      .logo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      
+      .footer-center {
+        text-align: center;
+      }
+      
+      .pay {
+        width: 100px;
+        margin: 40px 0;
+        display: block;
+        align-items: center;
+      }
+      
+      .social-icons{
+        width: 120px;
+        height: 70px;
+        margin: 20px 0;
+        align-items:center;
+        display: block;
+      }
+      
+      .footer-middle h3 {
+        margin-bottom: 10px;
+        margin-top: 80px;
+        font-size: 22px;
+      }
+      
+      .footer-middle p {
+        margin: 2px 0;
+        font-size: 15px;
+      }
+      .footer-right h3{
+        margin-bottom: 10px;
+        margin-top: 80px;
+        font-size: 22px;
+      }
+      .footer-right p{
+        margin: 2px 0;
+        font-size: 15px;
+      }
+    </style>
+
+  <footer class="footer">
+
+      <!-- Left side -->
+      <div class="footer-left">
+        <img src="../projectimage/logo/logo.jpg.jpeg" class="logo">
+    
+        <p>
+          <b>MOBILETECH</b> is Sri Lanka's leading mobile phone store, offering a vast range 
+          of smartphones, accessories, and repair services. We partner with top brands 
+          like Apple, Samsung, Xiaomi and more. Enjoy a seamless shopping experience 
+          with the finest selection of high-quality devices to suit all budgets.
+        </p>
+        <img src="../projectimage/4 show/visa.png" class="pay">
+        <img src="../projectimage/4 show/so.jpg" class="social-icons">
+      </div>
+    
+      <div class="footer-middle">
+        <h3>Matara</h3>
+        <p>No. 42, Beach Road, Matara</p>
+        <p><b>070 871 07 14</b></p>
+
+        <p>No. 30, Weligama Road, Matara</p>
+        <p><b>077 544 67 90</b></p>
+
+        <h3>Colombo</h3>  
+        <p>No. 39, High Level Road, Colombo</p>
+        <p><b>071 901 84 11</b></p>
+        </div>
+        <div class="footer-right">
+        <h3>Sales and Support Hot Line</h3>
+        <p>+94 701 425 478</p>
+        <p>+94 771 598 046</p>
+
+        <h3>Repair Center</h3>
+        <p>+94 701 280 031</p>
+        <p>+94 746 023 134</p>
+      </div>
+    
+    </footer>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+ body {
+     font-family: inherit;
+     margin: 0;
+     background-color: #f4f4f4;
+     display: flex;
+ }
+
+ .sidebar {
+     width: 20%px;
+     background: white;
+     padding: 20px;
+     height: 100vh;
+     border-right: 1px solid #ddd;
+ }
+
+ .main-content {
+     flex: 1;
+     padding: 30px;
+     width: 100%;
+ }
+
+ .header-area {
+     margin-bottom: 20px;
+ }
+
+ .header-area h1 {
+     margin: 0;
+     color: #333;
+ }
+
+
+ .btn-select {
+     display: block;
+     background: #222;
+     color: white;
+     padding: 8px;
+     margin-top: 10px;
+     text-decoration: none;
+     font-size: 13px;
+     border-radius: 4px;
+ }
+
+ /*main part desing*/
+ .mainpart {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .search_bar {
+     width: 90%;
+     display: flex;
+     margin-bottom: 30px;
+
+ }
+
+ .searchbox {
+     width: 50%;
+     height: 48px;
+     margin: 0;
+ }
+
+ .searchbtn {
+     display: flex;
+     padding: 0;
+     margin: 0;
+     width: fit-content;
+     height: fit-content;
+     cursor: pointer;
+ }
+
+ /*Menu icon*/
+ .menu {
+     display: flex;
+     width: 10%;
+ }
+
+ .hidemenu {
+     display: flex;
+     width: fit-content;
+     height: fit-content;
+     padding: 0;
+     right: 0;
+     border: none;
+     margin-left: 20px;
+     margin-top: 5px;
+     cursor: pointer;
+ }
+
+ /*smart bar*/
+ .side-bar {
+     position: fixed;
+     top: 0;
+     right: 0;
+     padding-top: 1px;
+     overflow: auto;
+     width: 250px;
+     height: 100vh;
+     display: none;
+     background-color: black;
+     flex-direction: column;
+     justify-content: space-evenly;
+
+ }
+
+ .smbar-list {
+     color: aliceblue;
+     font-size: 20px;
+     padding: 5px;
+ }
+
+ .side-bar ul {
+     list-style-type: none;
+     text-align: left;
+     padding: 5px;
+     font-size: 20px;
+ }
+
+ .side-bar ul a {
+     padding-left: 20px;
+     border-left: 3px solid black;
+     transition: 0.3s;
+     color: aliceblue;
+     text-decoration: none;
+ }
+
+ .side-bar ul a:hover {
+     color: rgb(180, 86, 199);
+     border-left: rgb(180, 86, 199);
+     box-shadow: inset 50px 0px 40px -40px rgb(203, 58, 232);
+ }
+
+ .arr-list {
+     padding-left: 40px;
+ }
+
+ .close {
+     width: fit-content;
+     height: fit-content;
+     margin-left: 75%;
+     margin-top: 10px;
+     background-color: black;
+     border: 0;
+     cursor: pointer;
+ }
+
+ .close:hover {
+     box-shadow: 0 5px 15px rgb(180, 86, 199);
+ }
+
+ .details-section {
+     flex-direction: row;
+     display: flex;
+ }
+
+ .bdetails {
+     width: 48%;
+     left: 0;
+     margin-right: 50px;
+     padding: 50px;
+     color: black;
+     border: 3px solid black;
+     border-radius: 15px;
+     background: linear-gradient(45deg, rgb(231, 67, 223), rgb(170, 15, 201));
+ }
+
+ .bndetails {
+     width: 48%;
+     right: 0;
+     padding: 50px;
+     color: black;
+     border: 3px solid black;
+     border-radius: 15px;
+     background: linear-gradient(315deg, rgb(231, 67, 223), rgb(170, 15, 201));
+ }
+
+ .fname,
+ .lname,
+ .sadd,
+ .town,
+ .pascode,
+ .pnumber,
+ .email,
+ .cname,
+ .bankname,
+ .cardnumber,
+ .vdate,
+ .snumber {
+     font-size: 17px;
+     margin-bottom: 2px;
+ }
+
+ .banks,
+ .city {
+     font-size: 15px;
+     margin-bottom: 8px;
+     background: transparent;
+     border: 2px solid white;
+     border-radius: 7px;
+     width: 100%;
+     padding: 3px;
+ }
+
+ .form-control,
+ .from-bank {
+     margin-bottom: 8px;
+     background: transparent;
+     border: 2px solid white;
+     border-radius: 7px;
+     width: 100%;
+     font-size: 17px;
+     height: 22px;
+     color: white;
+
+ }
+
+ .paybtn {
+     float: right;
+     margin-top: 15px;
+     color: black;
+     font-size: 15px;
+     font-family: initial;
+     font-weight: bold;
+     background: transparent;
+     border: 3px solid black;
+     padding: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+     border-radius: 20px;
+ }
+
+ .restbtn {
+     float: left;
+     margin-top: 15px;
+     color: black;
+     font-size: 15px;
+     font-family: initial;
+     font-weight: bold;
+     background: transparent;
+     border: 3px solid black;
+     padding: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+     border-radius: 20px;
+ }
+
+ .paybtn:hover {
+     cursor: pointer;
+     background: linear-gradient(rgb(28, 27, 27), rgb(203, 58, 232));
+ }
+
+ .restbtn:hover {
+     cursor: pointer;
+     background: linear-gradient(rgb(28, 27, 27), rgb(203, 58, 232));
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+ /*conform order*/
+ .large-bar {
+     flex-direction: column;
+     display: flex;
+     width: 80%;
+ }
+
+ .conform-details {
+     border: 3px solid rgb(180, 86, 199);
+     display: flex;
+     padding: 10px;
+
+ }

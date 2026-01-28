@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="si">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppo</title>
+    <link rel="stylesheet" href="newphone.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <img src="mobileteclogo.jpg" alt="mobiletechlogo" width="150px" height="100px">
+        <div class="filter-group">
+            <h3>Stock Status</h3>
+            <label><input type="radio" name="stock"> In Stock</label><br>
+            <label><input type="radio" name="stock"> Out of Stock</label>
+        </div>
+        <button
+            style="width: 100%; padding: 8px; background: rgb(180, 86, 199); color: white; border: none; cursor: pointer;">Filter</button>
+
+        <div class="filter-group" style="margin-top:20px;">
+            <h3>Product Categories</h3>
+            <h3>Price</h3>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="mainpart">
+            <div class="search_bar">
+
+                <input type="text" placeholder="Search smartphones..." class="searchbox" id="search-phone"
+                    onkeyup="searchFunction()">
+
+
+                <button class="searchbtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16"
+                        style="padding: 10px; background-color:  rgb(180, 86, 199);">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </button>
+            </div>
+            <div class="menu">
+                <button class="hidemenu" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-list-columns-reverse" viewBox="0 0 16 16" style="background-color: white;">
+                        <path fill-rule="evenodd"
+                            d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5m4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5m-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="side-bar" id="sideget">
+                <button class="close" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-box-arrow-right" viewBox="0 0 16 16" style="color: white;">
+                        <path fill-rule="evenodd"
+                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                        <path fill-rule="evenodd"
+                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                    </svg>
+                </button>
+                <ul class="smbar">
+                    <li class="smbar-list">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-brilliance" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16M1 8a7 7 0 0 0 7 7 3.5 3.5 0 1 0 0-7 3.5 3.5 0 1 1 0-7 7 7 0 0 0-7 7" />
+                        </svg>
+                        <label>
+                            <b>New Arrivals</b>
+                        </label>
+                        <ul class="arr-list">
+                            <li class="sm-list">
+                                <a href="#">
+                                    Mobaile Phones
+                                </a>
+                            </li>
+                            <li class="sm-list">
+                                <a href="#">
+                                    Audio Divice
+                                </a>
+                            </li>
+                        </ul>
+                    </li><br>
+                    <li class="smbar-list">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-phone-flip" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+                        </svg>
+                        <label>
+                            <b>Smart Phones</b>
+                        </label>
+                    </li>
+                    <ul class="arr-list">
+                        <li class="sm-list">
+                            <a href="apple.html">Apple iPhone</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="blackviwe.html">Blackviwe</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="honner.html">Honor</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="motarola.html">Motorola</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="oppo.html">Oppo</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="realme.html">Realme</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="redme.html">Xiaomi / Redme</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="samsung.html">Samsung</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="tecno.html">Tecno</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="tlc.html">TLC</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="vivo.html">Vivo</a>
+                        </li>
+                        <li class="sm-list">
+                            <a href="zte.html">ZTE</a>
+                        </li>
+
+                    </ul>
+                    </li><br>
+                    <li class="smbar-list">
+
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-headphones" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                            </svg>
+                            <b>Audio</b>
+                        </a>
+
+                    </li><br>
+                    <li class="smbar-list">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-speaker" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                <path
+                                    d="M8 4.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5M8 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-3.5 1.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                            </svg>
+                            <b>Accessories</b>
+                        </a>
+                    </li><br>
+                    <li class="smbar-list">
+                        <a href="login_form.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                            <b> Login</b>
+                        </a>
+                    </li><br>
+                    <li class="smbar-list">
+                        <a href="checkoutnew.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            </svg>
+                            <b> Cart</b>
+                        </a>
+                    </li>
+                    <li class="smbar-list">
+                        <a href="homechat.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-house" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                            </svg>
+                            <b> Home</b>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <ul id="suggestions-list">
+            <li><a href="apple.html">Apple iPhone</a></li>
+            <li><a href="blackviwe.html">Blackviwe</a></li>
+            <li><a href="honner.html">Honor</a></li>
+            <li><a href="motarola.html">Motorola</a></li>
+            <li><a href="oppo.html">Oppo</a></li>
+            <li><a href="realme.html">Realme</a></li>
+            <li><a href="redme.html">Xiaomi / Redme</a></li>
+            <li><a href="samsung.html">Samsung</a></li>
+            <li><a href="tecno.html">Tecno</a></li>
+            <li><a href="tlc.html">TLC</a></li>
+            <li><a href="vivo.html">Vivo</a></li>
+            <li><a href="zte.html">ZTE</a></li>
+        </ul>
+
+        <div class="header-area">
+            <h1>Oppo</h1>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <a href="#">
+                    <img src="Oppo/A3.webp" alt="Apple">
+                    <div class="product-title">Oppo A3</div>
+                    <span class="old-price">Rs.511,990.00</span> Rs.505,089.00
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="#">
+                    <img src="Oppo/A3x.webp" alt="Honor">
+                    <div class="product-title">Oppo A3X</div>
+                    <div class="price">
+                        <span class="old-price">Rs.74,990.00</span> Rs.72,089.00
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="#">
+                    <img src="Oppo/A5.webp" alt="Redme">
+                    <div class="product-title">Oppo A5</div>
+                    <span class="old-price">Rs.61,990.00</span> Rs.55,089.00
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="#">
+                    <div class="out-of-stock">Out of Stock</div>
+                    <img src="Oppo/A5x.webp" alt="Oppo-A5x">
+                    <div class="product-title">Oppo A5x</div>
+                    <span class="old-price">Rs.55,990.00</span> Rs.52,089.00
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="phone.js"></script>
+
+</body>
+
+</html>
