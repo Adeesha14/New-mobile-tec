@@ -103,7 +103,7 @@
 
         <div class="cart-summary">
             <p>Total Amount:</p>
-            <div class="total-price">$<span id="grand-total">0.00</span></div>
+            <div class="total-price">Rs. <span id="grand-total">0.00</span></div>
             <button class="checkout-btn" onclick="alert('Proceeding to Checkout...')">Checkout Now</button>
             <br>
             <button onclick="clearFullCart()"
@@ -145,11 +145,11 @@
                     <div class="item-details">
                         <h4>${item.name}</h4>
                         <p>Color: <strong>${item.color}</strong></p>
-                        <p>Price: $${item.price}</p>
+                        <p>Price: ${"Rs." + item.price}</p>
                         <p>Quantity: ${item.quantity}</p>
                     </div>
                     <div style="text-align: right; margin-right: 20px;">
-                        <strong>$${lineTotal.toFixed(2)}</strong>
+                        <strong>${"Rs." + lineTotal.toFixed(2)}</strong>
                     </div>
                     <button class="remove-btn" onclick="removeProduct(${index})">Remove</button>
                 </div>
