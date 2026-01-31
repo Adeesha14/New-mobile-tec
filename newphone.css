@@ -120,7 +120,18 @@
      width: 90%;
      display: flex;
      margin-bottom: 30px;
+ }
 
+ .phonesearch {
+     display: flex;
+     margin: 30px;
+     padding-left: 6.6%;
+     width: 69%;
+ }
+
+ .logo {
+     display: flex;
+     padding: 20px;
  }
 
  .searchbox {
@@ -153,6 +164,19 @@
      border: none;
      margin-left: 20px;
      margin-top: 5px;
+     cursor: pointer;
+ }
+
+ .hidemenu2 {
+
+     display: flex;
+     width: fit-content;
+     height: fit-content;
+     padding: 0;
+     right: 0;
+     border: none;
+     margin-left: 20px;
+     margin-top: 30px;
      cursor: pointer;
  }
 
@@ -216,18 +240,19 @@
  }
 
  /*search*/
- .sh-prt1{
-        position: relative;
-        width: 100%;
-        margin: 0;
+ .sh-prt1 {
+     position: relative;
+     width: 100%;
+     margin: 0;
  }
+
  #suggestions-list {
-    width: 50%;
-    height: fit-content;
+     width: 50%;
+     height: fit-content;
      list-style-type: none;
      padding: 0;
      display: none;
-     
+
  }
 
  #suggestions-list li a {

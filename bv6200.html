@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,22 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="newphone.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             font-family: sans-serif;
             box-sizing: border-box;
         }
 
-        .container{
+        .container {
             width: 100%;
             max-width: 1200px;
             margin: auto;
         }
 
-        .wrapper{
+        .wrapper {
             width: 100%;
             min-height: 100vh;
             display: flex;
@@ -30,40 +31,40 @@
             justify-content: space-evenly;
         }
 
-        .text{
+        .text {
             flex-basis: 45%;
         }
 
-        .all-images{
+        .all-images {
             height: 80vh;
             display: flex;
         }
 
-        .small-images{
+        .small-images {
             display: flex;
             flex-direction: column;
         }
 
-        .small-images img{
+        .small-images img {
             height: 19vh;
             margin-bottom: 9px;
             cursor: pointer;
             opacity: 0.6;
         }
 
-        .small-images img:hover{
+        .small-images img:hover {
             opacity: 1;
         }
 
-        .main-images img{
+        .main-images img {
             height: 100%;
         }
 
-        p{
+        p {
             margin-bottom: 20px;
         }
 
-        .brand{
+        .brand {
             background-color: rgb(255, 0, 255);
             width: fit-content;
             color: #000;
@@ -72,13 +73,13 @@
             padding: 2px 5px;
         }
 
-        h2{
+        h2 {
             font-size: 35px;
             color: #000;
             margin-bottom: 20px;
         }
 
-        .review{
+        .review {
             background-color: rgba(87, 161, 86, 0.493);
             display: inline-block;
             color: #000;
@@ -87,12 +88,12 @@
             font-size: 15px;
         }
 
-        .price-box{
+        .price-box {
             display: flex;
             align-items: center;
         }
 
-        .price{
+        .price {
             color: #1d1c1c;
             font-size: 26px;
             font-weight: bold;
@@ -100,14 +101,14 @@
             padding-right: 10px;
         }
 
-        input{
+        input {
             width: 40px;
             border: 1px solid #ccc;
             font-weight: bold;
             text-align: center;
         }
 
-        button{
+        button {
             width: 140px;
             color: #fff;
             font-size: 15px;
@@ -119,37 +120,37 @@
             margin-right: 10px;
         }
 
-        button .fa{
+        button .fa {
             margin-right: 10px;
         }
 
-        .buy{
+        .buy {
             background-color: rgb(201, 97, 57);
         }
 
         /* Responsive */
-        @media (max-width:1200px){
-            .wrapper{
+        @media (max-width:1200px) {
+            .wrapper {
                 flex-direction: column;
                 padding: 5% 0;
             }
 
-            .text{
+            .text {
                 padding-top: 50px;
             }
 
-            .all-images{
+            .all-images {
                 flex-direction: column;
                 height: auto;
             }
 
-            .small-images{
+            .small-images {
                 flex-direction: row;
                 justify-content: space-evenly;
                 order: 1;
             }
 
-            h2{
+            h2 {
                 font-size: 25px;
             }
         }
@@ -157,48 +158,66 @@
 </head>
 
 <body>
+    <div class="sidebar">
+        <img src="mobileteclogo.jpg" alt="mobiletechlogo" width="150px" height="100px">
+    </div>
 
-<div class="container">
-    <div class="wrapper">
+    <div class="container">
+        <div class="search_bar">
 
-        <div class="product-box">
-            <div class="all-images">
+            <input type="text" placeholder="Search smartphones..." class="searchbox" id="search-phone"
+                onkeyup="searchFunction()">
 
-                <div class="small-images">
-                    <img src="Black viwe/BV6200pro.webp" onclick="clickimg(this)">
-                    
-                </div>
 
-                <div class="main-images">
-                    <img src="Black viwe/BV6200pro.webp" id="imagebox">
-                </div>
-
-            </div>
+            <button class="searchbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16" style="padding: 10px; background-color:  rgb(180, 86, 199);">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </button>
         </div>
 
-        <div class="text">
-            <div class="content">
-                <p class="brand">Brand : black view</p>
-                <h2>BV A52</h2>
+        <div class="wrapper">
 
-                <div class="review">
-                    <span>(4.6)</span>
-                    <span class="fa fa-star"></span>
+            <div class="product-box">
+                <div class="all-images">
+
+                    <div class="small-images">
+                        <img src="Black viwe/BV6200pro.webp" onclick="clickimg(this)">
+
+                    </div>
+
+                    <div class="main-images">
+                        <img src="Black viwe/BV6200pro.webp" id="imagebox">
+                    </div>
+
                 </div>
+            </div>
 
-                <div class="price-box">
-                    <p class="price">Rs. 45,000/=</p>
-                    <strike>Rs. 40,000/=</strike>
-                </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : black view</p>
+                    <h2>BV A52</h2>
 
-                <ul>
-                    <li>Drop Resistance</li>
-                    <li>10W charging</li>
-                    <li>Pedometer</li>
-                    <li>Termal Camera</li>
-                </ul>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                    </div>
 
-                <p>
+                    <div class="price-box">
+                        <p class="price">Rs. 45,000/=</p>
+                        <strike>Rs. 40,000/=</strike>
+                    </div>
+
+                    <ul>
+                        <li>Drop Resistance</li>
+                        <li>10W charging</li>
+                        <li>Pedometer</li>
+                        <li>Termal Camera</li>
+                    </ul>
+
+                    <p>
                         <label for="color-select">Color:</label>
                         <select id="color-select">
                             <option value="Titanium Black">Titanium Black</option>
@@ -229,6 +248,7 @@
     </div>
 
     <script src="phonecart.js"></script>
+    <script src="phone.js"></script>
 </body>
 
 </html>
