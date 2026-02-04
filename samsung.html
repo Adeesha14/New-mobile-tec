@@ -6,18 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung</title>
     <link rel="stylesheet" href="newphone.css">
-    <script type="text/javascript">
-        function toggleSidebar() {
-            var sidebar = document.getElementById("sideget");
-            if (sidebar.style.display === "block") {
-                sidebar.style.display = "none";
-            } else {
-                sidebar.style.display = "block";
-            }
-
-            document.getElementById("close").style.display = "none";
-        }
-    </script>
+    
 </head>
 
 <body>
@@ -41,7 +30,11 @@
     <div class="main-content">
         <div class="mainpart">
             <div class="search_bar">
-                <input type="text" placeholder="Search smartphones..." class="searchbox">
+
+                <input type="text" placeholder="Search smartphones..." class="searchbox" id="search-phone"
+                    onkeyup="searchFunction()">
+
+
                 <button class="searchbtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-search" viewBox="0 0 16 16"
@@ -169,7 +162,7 @@
                         </a>
                     </li><br>
                     <li class="smbar-list">
-                        <a href="#">
+                        <a href="login_form.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -180,7 +173,7 @@
                         </a>
                     </li><br>
                     <li class="smbar-list">
-                        <a href="#">
+                        <a href="checkoutnew.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-bag-check-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -189,27 +182,128 @@
                             <b> Cart</b>
                         </a>
                     </li>
+                    <li class="smbar-list">
+                        <a href="homechat.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-house" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                            </svg>
+                            <b> Home</b>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
+        <ul id="suggestions-list">
+              <li><a href="apple.html">Apple iPhone</a></li>
+            <li><a href="blackviwe.html">Blackviwe</a></li>
+            <li><a href="honner.html">Honor</a></li>
+            <li><a href="motarola.html">Motorola</a></li>
+            <li><a href="oppo.html">Oppo</a></li>
+            <li><a href="realme.html">Realme</a></li>
+            <li><a href="redme.html">Xiaomi / Redme</a></li>
+            <li><a href="samsung.html">Samsung</a></li>
+            <li><a href="tecno.html">Tecno</a></li>
+            <li><a href="tlc.html">TLC</a></li>
+            <li><a href="vivo.html">Vivo</a></li>
+            <li><a href="zte.html">ZTE</a></li>
+            <li><a href="ip13.html">Apple iPhone 13</a></li>
+            <li><a href="ip14.html">Apple iPhone 14</a></li>
+            <li><a href="ip15+.html">Apple iPhone 14</a></li>
+            <li><a href="ip15.html">Apple iPhone 14</a></li>
+            <li><a href="ip15pro.html">Apple iPhone 14</a></li>
+            <li><a href="ip15promax.html">Apple iPhone 14</a></li>
+            <li><a href="ip16.html">Apple iPhone 14</a></li>
+            <li><a href="ip16pro.html">Apple iPhone 14</a></li>
+            <li><a href="ip16promax.html">Apple iPhone 14</a></li>
+            <li><a href="ip17.html">Apple iPhone 14</a></li>
+            <li><a href="ip17pro.html">Apple iPhone 14</a></li>
+            <li><a href="ipair.html">Apple iPhone 14</a></li>
+            <li><a href="bv4800.html">Blackviww 4800</a></li>
+            <li><a href="bv6200.html">Blackviwe 6200</a></li>
+            <li><a href="bva52.html">Blackviwe A 52</a></li>
+            <li><a href="bva8.html">Blackviwe A 8</a></li>
+            <li><a href="bvc8.html">Blackviwe Color 8</a></li>
+            <li><a href="bvc9.html">Blackviwe C 9</a></li>
+            <li><a href="bvs8.html">Blackviwe Smart 8</a></li>
+            <li><a href="bvw6c.html">Blackviwe Wave 6C</a></li>
+            <li><a href="bvw8.html">Blackviwe Wave 8</a></li>
+            <li><a href="hx200smart.html">Honer X200 Smart</a></li>
+            <li><a href="hx5b.html">Honor X 5B</a></li>
+            <li><a href="hx6c.html">Honor X 6C</a></li>
+            <li><a href="hx7b.html">Honor X 7B</a></li>
+            <li><a href="hx7c.html">Honor X 7C</a></li>
+            <li><a href="hx7d.html">Honor X 7D</a></li>
+            <li><a href="hx8b.html">Honor X 8B</a></li>
+            <li><a href="hx8c.html">Honor X 8C</a></li>
+            <li><a href="hx9b.html">Honor X 9B</a></li>
+            <li><a href="oA3.html">Oppo A3</a></li>
+            <li><a href="oA3x.html">Oppo A3x</a></li>
+            <li><a href="oA5.html">Oppo A5</a></li>
+            <li><a href="oa5x.html">Oppo A5x</a></li>
+            <li><a href="r13.html">Readme 13</a></li>
+            <li><a href="r13c.html">Readme 13c</a></li>
+            <li><a href="r13pro.html">Readme 1pro</a></li>
+            <li><a href="r13pro+.html">Readme 13pro plus</a></li>
+            <li><a href="r13pro+gg.html">Readme 13pro plus 5G</a></li>
+            <li><a href="r14.html">Readme 14</a></li>
+            <li><a href="r14pro+5g.html">Readme 14pro plus 5G</a></li>
+            <li><a href="r14pro.html">Readme 14pro</a></li>
+            <li><a href="r15.html">Readme 15</a></li>
+            <li><a href="r155g.html">Readme 15 5G</a></li>
+            <li><a href="rmc61.html">realme C61 </a></li>
+            <li><a href="rmn50.html">realme Note 50</a></li>
+            <li><a href="rmn60.html">realme Note 60</a></li>
+            <li><a href="rmn60x.html">realme Note 60x</a></li>
+            <li><a href="rmnc75x.html">realme Note 75x</a></li>
+            <li><a href="rmn70.html">realme Note 75</a></li>
+            <li><a href="s23ultra.html">Samsung S23 Ultra</a></li>
+            <li><a href="s24fe.html">Samsung 24SE</a></li>
+            <li><a href="s24ultra.html">Samsung S24 Ultra</a></li>
+            <li><a href="sa165g.html">Samsung A16 5G</a></li>
+            <li><a href="sa175g.html">Samsung A17 5G</a></li>
+            <li><a href="sa265g.html">Samsung 26 5G</a></li>
+            <li><a href="sa355g.html">Samsung A35 5G</a></li>
+            <li><a href="sa365g.html">Samsung A36 5G</a></li>
+            <li><a href="sa55.html">Samsung A55</a></li>
+            <li><a href="sa56.html">Samsung A56</a></li>
+            <li><a href="sf165g.html">Samsung F16 5G</a></li>
+            <li><a href="sm355g.html">Samsung M35 5G</a></li>
+            <li><a href="Acc/anker_liberty_final.html">Anker liberty</a></li>
+            <li><a href="Acc/Apple Pencil Tips.html">Aplle Pencil Tips</a></li>
+            <li><a href="Acc/apple_airpods_pro_2nd_typec.html">Apple Airpods Pro 2<sup>nd</sup> Type</a></li>
+            <li><a href="Acc/appleairpodpro3.html">Apple Air pod pro 3</a></li>
+            <li><a href="Acc/Baseus Airpow lite power bank 10000mah 12w.html">baseus Airpow Lite Powe Bank</a></li>
+            <li><a href="Acc/Baseus Cafule PD3.1 100w Data Cable.html">Baseus Cafule PD.3</a></li>
+            <li><a href="Acc/Baseus Hub Adapter.html">Baseus Hub Adepter</a></li>
+            <li><a href="Acc/Baseus L52 3-in-1 lightning Audio converter.html">Baseus L52 3-in-1 Lightning Audio</a></li>
+            <li><a href="Acc/Baseus rapid charge usb to lightning data cable.html">Baseus Rapid charge usb to Lightning Data Cables</a></li>
+            <li><a href="Acc/galaxybudscore.html">Galaxy Budscore</a></li>
+            <li><a href="Acc/Magnetic Mini Wireless fast charge 10000mAh 20W Power Bank.html">Magnetic Mini Wireless Fast Charge 10000mAh</a></li>
+            <li><a href="Acc/magnetic_mini_wirelesss fast charge.html">Magnetic Mini Wireless Fast Charge</a></li>
+            <li><a href="Acc/MagSafe Charger.html">MagSafe Charger</a></li>
+            <li><a href="Acc/acce.html">Accelaries</a></li>
+        </ul>
+
 
         <div class="header-area">
-            <h1>Smartphones</h1>
+            <h1>Samsung</h1>
         </div>
 
         <div class="product-grid">
 
             <div class="product-card">
-                <a href="s24ultra.html">
-                    <img src="image/S S24 Ultra.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/s24 ultra.webp" alt="Apple">
                     <div class="product-title">Samsung S24 Ultra</div>
                     <span class="old-price">Rs.511,990.00</span> Rs.505,089.00
                 </a>
             </div>
 
             <div class="product-card">
-                <a href="s24fe.html">
-                    <img src="image/S S24 fe.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/s24 fe.webp" alt="Honor">
                     <div class="product-title">Samsung S24 FE</div>
                     <div class="price">
                         <span class="old-price">Rs.74,990.00</span> Rs.72,089.00
@@ -218,74 +312,74 @@
             </div>
 
             <div class="product-card">
-                <a href="s23ultra.html">
-                    <img src="image/S S23 Ultra.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/s23 ultra.webp" alt="Redme">
                     <div class="product-title">Samsung S23 Ultra</div>
                     <span class="old-price">Rs.61,990.00</span> Rs.55,089.00
                 </a>
             </div>
 
             <div class="product-card">
-                <a href="sa165g.html">
+                <a href="#">
                     <div class="out-of-stock">Out of Stock</div>
-                    <img src="image/S A16 5g.jpeg" alt="Samsung">
+                    <img src="Samsung/A16 5g.webp" alt="Oppo-A5x">
                     <div class="product-title">Samsung A16 5G</div>
                     <span class="old-price">Rs.55,990.00</span> Rs.52,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="sa175g.html">
-                    <img src="image/S A17 5g.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/A17.webp" alt="Blackview-A52-Pro">
                     <div class="product-title">Samsung A17</div>
                     <span class="old-price">Rs.50,990.00</span> Rs.47,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="sa265g.html">
-                    <img src="image/S A26 5g.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/A26 5g.webp" alt="Realme note-70">
                     <div class="product-title">Samsung A26 5G</div>
                     <span class="old-price">Rs.54,990.00</span> Rs.51,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="sa355g.html">
-                    <img src="image/s A35 5g.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/A35 5g.webp" alt="motorola-moto-g45">
                     <div class="product-title">Samsung A35 5G</div>
                     <span class="old-price">Rs.50,990.00</span> Rs.47,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="sa365g.html">
-                    <img src="image/S A36 5g.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/A36 5g.webp" alt="Samsung Galaxy S25 Ultra">
                     <div class="product-title">Samsung A36 5G</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
 
             <div class="product-card">
-                <a href="sa55.html">
-                    <img src="image/S A55.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/A55.webp" alt="vivo V50">
                     <div class="product-title">Samsung A55</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="sa56.html">
-                    <img src="image/S A56.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/A56.webp" alt="tecno camon 40 pro">
                     <div class="product-title">Samsung A56</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="sf165g.html">
-                    <img src="image/S F16 5g.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/F16.webp" alt="TCL-505s">
                     <div class="product-title">Samsung F16</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="sm355g.html">
-                    <img src="image/S M35 5g.jpeg" alt="Samsung">
+                <a href="#">
+                    <img src="Samsung/M35 5g.webp" alt="ZTE Nubia v80">
                     <div class="product-title">Samsung M35 5G</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
