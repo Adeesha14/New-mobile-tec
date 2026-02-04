@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung</title>
     <link rel="stylesheet" href="newphone.css">
-    
+    <script type="text/javascript">
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sideget");
+            if (sidebar.style.display === "block") {
+                sidebar.style.display = "none";
+            } else {
+                sidebar.style.display = "block";
+            }
+
+            document.getElementById("close").style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -30,11 +41,7 @@
     <div class="main-content">
         <div class="mainpart">
             <div class="search_bar">
-
-                <input type="text" placeholder="Search smartphones..." class="searchbox" id="search-phone"
-                    onkeyup="searchFunction()">
-
-
+                <input type="text" placeholder="Search smartphones..." class="searchbox">
                 <button class="searchbtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-search" viewBox="0 0 16 16"
@@ -162,7 +169,7 @@
                         </a>
                     </li><br>
                     <li class="smbar-list">
-                        <a href="login_form.html">
+                        <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -173,7 +180,7 @@
                         </a>
                     </li><br>
                     <li class="smbar-list">
-                        <a href="cart.html">
+                        <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-bag-check-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -182,52 +189,27 @@
                             <b> Cart</b>
                         </a>
                     </li>
-                    <li class="smbar-list">
-                        <a href="homechat.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-house" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
-                            </svg>
-                            <b> Home</b>
-                        </a>
-                    </li>
                 </ul>
             </nav>
         </div>
-        <ul id="suggestions-list">
-            <li><a href="apple.html">Apple iPhone</a></li>
-            <li><a href="blackviwe.html">Blackviwe</a></li>
-            <li><a href="honner.html">Honor</a></li>
-            <li><a href="motarola.html">Motorola</a></li>
-            <li><a href="oppo.html">Oppo</a></li>
-            <li><a href="realme.html">Realme</a></li>
-            <li><a href="redme.html">Xiaomi / Redme</a></li>
-            <li><a href="samsung.html">Samsung</a></li>
-            <li><a href="tecno.html">Tecno</a></li>
-            <li><a href="tlc.html">TLC</a></li>
-            <li><a href="vivo.html">Vivo</a></li>
-            <li><a href="zte.html">ZTE</a></li>
-        </ul>
-
 
         <div class="header-area">
-            <h1>Samsung</h1>
+            <h1>Smartphones</h1>
         </div>
 
         <div class="product-grid">
 
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/s24 ultra.webp" alt="Apple">
+                <a href="s24ultra.html">
+                    <img src="image/S S24 Ultra.jpeg" alt="Samsung">
                     <div class="product-title">Samsung S24 Ultra</div>
                     <span class="old-price">Rs.511,990.00</span> Rs.505,089.00
                 </a>
             </div>
 
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/s24 fe.webp" alt="Honor">
+                <a href="s24fe.html">
+                    <img src="image/S S24 fe.jpeg" alt="Samsung">
                     <div class="product-title">Samsung S24 FE</div>
                     <div class="price">
                         <span class="old-price">Rs.74,990.00</span> Rs.72,089.00
@@ -236,74 +218,74 @@
             </div>
 
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/s23 ultra.webp" alt="Redme">
+                <a href="s23ultra.html">
+                    <img src="image/S S23 Ultra.jpeg" alt="Samsung">
                     <div class="product-title">Samsung S23 Ultra</div>
                     <span class="old-price">Rs.61,990.00</span> Rs.55,089.00
                 </a>
             </div>
 
             <div class="product-card">
-                <a href="#">
+                <a href="sa165g.html">
                     <div class="out-of-stock">Out of Stock</div>
-                    <img src="Samsung/A16 5g.webp" alt="Oppo-A5x">
+                    <img src="image/S A16 5g.jpeg" alt="Samsung">
                     <div class="product-title">Samsung A16 5G</div>
                     <span class="old-price">Rs.55,990.00</span> Rs.52,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/A17.webp" alt="Blackview-A52-Pro">
+                <a href="sa175g.html">
+                    <img src="image/S A17 5g.jpeg" alt="Samsung">
                     <div class="product-title">Samsung A17</div>
                     <span class="old-price">Rs.50,990.00</span> Rs.47,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/A26 5g.webp" alt="Realme note-70">
+                <a href="sa265g.html">
+                    <img src="image/S A26 5g.jpeg" alt="Samsung">
                     <div class="product-title">Samsung A26 5G</div>
                     <span class="old-price">Rs.54,990.00</span> Rs.51,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/A35 5g.webp" alt="motorola-moto-g45">
+                <a href="sa355g.html">
+                    <img src="image/s A35 5g.jpeg" alt="Samsung">
                     <div class="product-title">Samsung A35 5G</div>
                     <span class="old-price">Rs.50,990.00</span> Rs.47,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/A36 5g.webp" alt="Samsung Galaxy S25 Ultra">
+                <a href="sa365g.html">
+                    <img src="image/S A36 5g.jpeg" alt="Samsung">
                     <div class="product-title">Samsung A36 5G</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
 
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/A55.webp" alt="vivo V50">
+                <a href="sa55.html">
+                    <img src="image/S A55.jpeg" alt="Samsung">
                     <div class="product-title">Samsung A55</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/A56.webp" alt="tecno camon 40 pro">
+                <a href="sa56.html">
+                    <img src="image/S A56.jpeg" alt="Samsung">
                     <div class="product-title">Samsung A56</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/F16.webp" alt="TCL-505s">
+                <a href="sf165g.html">
+                    <img src="image/S F16 5g.jpeg" alt="Samsung">
                     <div class="product-title">Samsung F16</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
             </div>
             <div class="product-card">
-                <a href="#">
-                    <img src="Samsung/M35 5g.webp" alt="ZTE Nubia v80">
+                <a href="sm355g.html">
+                    <img src="image/S M35 5g.jpeg" alt="Samsung">
                     <div class="product-title">Samsung M35 5G</div>
                     <span class="old-price">Rs.58,990.00</span> Rs.57,089.00
                 </a>
