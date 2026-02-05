@@ -41,10 +41,10 @@ function renderCart() {
     const cartList = document.getElementById('cart-items-list');
     const grandTotalDisplay = document.getElementById('grand-total');
 
-    // 1. Load data from localStorage
+
     const cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
 
-    // 2. Clear current display
+
     cartList.innerHTML = '';
 
     if (cart.length === 0) {
@@ -55,7 +55,7 @@ function renderCart() {
 
     let totalSum = 0;
 
-    // 3. Loop through items and build the HTML
+
     cart.forEach((item, index) => {
         const lineTotal = item.price * item.quantity;
         totalSum += lineTotal;
@@ -77,25 +77,9 @@ function renderCart() {
         cartList.innerHTML += itemHTML;
     });
 
-    // 4. Update Final Price
+
     grandTotalDisplay.innerText = totalSum.toFixed(2);
 }
 
-// Function to remove one specific item row
-function removeProduct(index) {
-    let cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
-    cart.splice(index, 1); // Remove the item at the specific index
-    localStorage.setItem('shoppingCart', JSON.stringify(cart)); // Save back to storage
-    renderCart(); // Refresh the page view
-}
 
-// Function to wipe the whole cart
-function clearFullCart() {
-    if (confirm("Are you sure you want to clear your cart?")) {
-        localStorage.removeItem('shoppingCart');
-        renderCart();
-    }
-}
-
-// Initial call to display items when page opens
 renderCart();
