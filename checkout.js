@@ -25,7 +25,6 @@ function conform() {
     let cvv = document.getElementById("snumber").value;
 
     localStorage.setItem("firstName", fname);
-    window.location.href = "cart.html";
 
 
     console.log(fname, lname, address, city, code, phone, email, cardholder, bank, cardnumber, validdate, cvv);
