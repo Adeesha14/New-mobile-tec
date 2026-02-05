@@ -88,3 +88,10 @@ body {
     padding: 30px;
     padding-top: 20px;
 }
+.alert {
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}

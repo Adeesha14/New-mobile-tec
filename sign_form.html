@@ -42,22 +42,25 @@
         <div class="content3">
             <div class="row">
                 <lable>Username: </lable><br>
-                <input type="text" class="username" placeholder="Username" required>
+                <input type="text" class="username" id="username" placeholder="Username" required>
             </div>
             <div class="row">
                 <lable>Password: </lable><br>
-                <input type="password" class="password" placeholder="Password" required>
+                <input type="password" class="password" id="password" placeholder="Password" required>
             </div>
 
             <div class="row">
                 <lable>Confirm Password: </lable><br>
-                <input type="password" class="confirmpassword" placeholder="Confirm Password" required>
+                <input type="password" class="confirmpassword" id="confirmpassword" placeholder="Confirm Password"
+                    required>
             </div>
             <a href="login_form.html">
-            <button type="submit" class="reg">Register</button>
+            <button type="button" class="reg" onclick="signup()">Register</button>
             </a>
         </div>
+        <p id="msg" class="alert"></p>
     </div>
+    <script src="singin.js"></script>
 </body>
 
 </html>
