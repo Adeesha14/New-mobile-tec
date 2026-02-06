@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE TECH </title>
+        
+    
+</head>
+
+<body style="margin: 0; padding: 0; min-height: 100vh; width: 100%; background: linear-gradient(135deg, #cfd4ecf1 0%, #f6dbfd 100%) fixed; background-size: cover;">    <section>
+    
+    <section>
+            <style>
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            /*marquee*/
+            .marquee {
+                width: 100%;
+                height: 50px;
+                ;
+            }
+
+            .marquee p {
+                animation: scroll-left 20s linear infinite;
+            }
+
+            @keyframes scroll-left {
+                0% {
+                    transform: translateX(100%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+
+            }
+
+            #mar {
+                background-image: url("../projectimage/bc.jpeg");
+                background-size: cover;
+                font-size: 65px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                width: 100%;
+                height: 100px;
+            }
+
+            .body {
+                background-image: url(gradient.jpg.jpeg);
+            }
+
+            nav ul li a {
+                color: rgb(255, 255, 255);
+                padding: 26px;
+                text-decoration: none;
+                text-align: center;
+
+            }
+
+            nav ul {
+                list-style-type: none;
+                display: flex;
+                padding: 10px;
+                background-color: rgb(180, 86, 199);
+                font-size: 15pt;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: justify;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                position: static;
+                border: 2px solid black;
+                width: 1250 px;
+                justify-content: space-between;
+                font-weight: bold;
+
+            }
+
+            nav ul li a:hover {
+                color: rgb(0, 0, 0);
+                height: 100px;
+            }
+
+            .sign {
+                display: flex
+            }
+
+            nav:hover .sign {
+                display: block;
+            }
+
+            .main {
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .searchbar {
+                padding: 15.5px;
+                width: 350px;
+
+            }
+
+            .row2 {
+                text-align: justify;
+                padding: 20px;
+                display: flex;
+                padding-left: 50px;
+            }
+
+            .searchb {
+                padding-left: 70px;
+            }
+
+            .logob {
+                width: 100px;
+                height: 100px;
+            }
+
+            .search {
+                width: 40%;
+                text-align: center;
+            }
+
+            .location1 {
+                padding-left: 50px;
+                width: 1%;
+            }
+
+            .locarea1 {
+                width: 15%;
+                padding-top: 2px;
+
+                height: 20px;
+            }
+
+            .location2 {
+                width: 1%;
+                padding-left: 70px;
+            }
+
+            .arimen,
+            .smart2 {
+                background-color: rgb(180, 86, 199);
+                border: 0px;
+                display: flex;
+                flex-direction: row;
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .ari1 a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            .arimen,
+            .smart2 {
+                color: white;
+                font-size: 18px;
+                height: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .arimen:hover,
+            .smart2:hover {
+                color: black;
+            }
+
+            .ari2,
+            .smart4 {
+                border: 0;
+                padding-left: 10px;
+
+            }
+
+            .arival,
+            .smart1 {
+                height: 20px;
+                border: 0;
+                font-size: 50px;
+                background-color: rgb(180, 86, 199);
+                padding: 0%;
+                padding-top: 4px;
+            }
+
+            .aridown,
+            .smartdown {
+                display: none;
+                position: absolute;
+                background-color: rgb(180, 86, 199);
+                min-width: 180px;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .aridown a,
+            .smartdown a,
+            .audio3 a {
+
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+            }
+
+            .arril,
+            .smart {
+                position: relative;
+                display: inline-block;
+            }
+
+            .arril:hover,
+            .smart:hover {
+                background-color: rgb(180, 86, 199);
+            }
+
+            .aridown a:hover,
+            .smartdown a:hover,
+            .audio3 a:hover {
+                background-color: rgb(180, 86, 199);
+                color: black;
+            }
+
+            .arril:hover .aridown,
+            .smart:hover .smartdown {
+                display: block;
+            }
+
+            .aud,
+            .acc,
+            .us,
+            .log,
+            .cart {
+                font-size: 18px;
+                background-color: rgb(180, 86, 199);
+                border: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+
+            .aud a,
+            .acc a,
+            .us a,
+            .log a,
+            .cart a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .aud a:hover,
+            .acc a:hover,
+            .us a:hover,
+            .log a:hover,
+            .cart a:hover {
+                color: black;
+            }
+        </style>
+        <div class="main">
+            <div class="logob">
+                <img src="../projectimage/logo/download.png" alt="Phone Shop Logo" class="logo">
+            </div>
+            <div class="search">
+                <form>
+                    <div class="row2">
+                        <div class="searchb">
+                            <input class="searchbar" type="text" placeholder="Search..">
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16"
+                                style="padding: 10px; background-color:  rgba(123, 13, 145, 0.785);">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="location1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt"
+                    viewBox="0 0 16 16" style="padding: 20px;">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </div>
+            <div class="locarea1">
+                <h2>Matara<br>0785416253</h2>
+            </div>
+
+            <div class="location2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt"
+                    viewBox="0 0 16 16" style="padding: 20px;">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </div>
+            <div class="locarea1">
+                <h2>Colombo<br>0785416254</h2>
+            </div>
+        </div>
+        <div class="marquee" id="mar">
+            <p>BEST SMARTPHONE RETAILER IN SOUTH ASIA </p>
+        </div>
+
+        <nav>
+            <div id="navbar">
+                <ul class="menu">
+                    <div class="arril">
+                        <button class="arival">
+                            <div class="arimen">
+                                <div class="ari1">
+                                    <b><a href="#">New Arrivals</a></b>
+                                </div>
+
+                            </div>
+                        </button>
+
+                    </div>
+                    <div class="smart">
+                        <button class="smart1">
+                            <div class="smart2">
+                                <div class="smart3">
+                                    <b>Smart Phones</b>
+                                </div>
+                                <div class="smart4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-caret-down" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="smartdown">
+                            <a href="../FINAL/p/apple.html">Apple iPhone</a>
+                            <a href="../FINAL/p/samsung.html">Samsung Galaxy</a>
+                            <a href="../FINAL/p/redme.html">Xiaomi / Redme</a>
+                            <a href="../FINAL/p/realme.html">Realme</a>
+                            <a href="../FINAL/p/oppo.html">Oppo</a>
+                            <a href="../FINAL/phones details/Vivo/vivo.html">Vivo</a>
+                            <a href="../FINAL/p/motarola.html">Motarola</a>
+                            <a href="../FINAL/p/zte.html">ZTE</a>
+                            <a href="../FINAL/p/tecno.html">Tecno</a>
+                            <a href="../FINAL/p/honner.html">Honnor</a>
+                            <a href="../FINAL/p/tlc.html">tlc</a>
+                            <a href="../FINAL/p/blackviwe.html">Blackviwe</a>
+                        </div>
+                    </div>
+
+                    <button class="aud"><a href="../FINAL/Speakers/speakers.html"><b>Speakers</b></a>
+                    </button>
+                    
+                    <button class="acc"><a href="../FINAL/p/acce.html"><b>Accessories</b></a></button>
+                    <button class="us"><a href="#about-section"><b>About Us</b></a></button>
+                    <button class="log">
+                        <a href="../FINAL/p/login_form.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </a>
+                    </button>
+                    <button class="cart">
+                        <a href="../FINAL/p/checkoutnew.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            </svg>
+                        </a>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+        <script type="text/javascript">
+            function signIn() {
+                var username = prompt("Please enter your username", "Username");
+                var password = prompt("Please enter your password", "Password");
+
+                if (username && password) {
+                    // Redirect to signin.html only if username and password are entered
+                    window.location.href = "signin.html";
+                } else {
+                    alert("You must enter both username and password!");
+                }
+            }
+
+        </script>
+    </section>
+
+    <!-- main heading -->
+    <section>
+        <style>
+            .main-heading h1 {
+                color: #fff;
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            .main-heading {
+                margin-top: 80px;
+            }
+
+            .main-heading h1 {
+                color: #1a1a1a;
+            }
+
+            .container {
+                width: 100%;
+                padding-right: var(--bs-gutter-x, .75rem);
+                padding-left: var(--bs-gutter-x, .75rem);
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: 50px;
+                /* This adds some space above the text */
+            }
+        </style>
+        <div class="main-heading">
+            <div class="container">
+                <div class="row" text-center>
+                    <div class="offset-md-2 col-md-8 text-center">
+                        <h1>Shop the Latest Mobile Phones in <br>Sri Lanka at Mobile TECH</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- list of items -->
+    <section>
+        <style>
+            .product-category-row {
+                display: flex;
+                gap: 12px;
+                padding: 20px;
+                justify-content: center;
+                flex-wrap: wrap;
+                /* Allows wrapping on smaller screens */
+            }
+
+            .item-card {
+                background-color: #f6f6f6;
+                border-radius: 12px;
+                width: 300px;
+                height: 350px;
+                padding: 20px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .item-card:hover {
+                background-color: #f0f0f0;
+                transform: translateY(-2px);
+            }
+
+            .img-box {
+                flex: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                height: auto;
+            }
+
+            .img-box img {
+                max-width: 320px;
+                max-height: 500px;
+                object-fit: contain;
+
+            }
+
+            .item-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .item-info span {
+                font-family: sans-serif;
+                font-weight: 600;
+                color: #333;
+                font-size: 14px;
+            }
+
+            .arrow-circle {
+                background: #000;
+                color: #fff;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+            }
+        </style>
+
+        <div class="product-category-row">
+            <a href="../FINAL/p/SmartPhone.html" class="item-card">
+                <div class="img-box">
+                    <img src="../projectimage/logo/17-pro-max-front-page-.jpg" alt="Smartphones">
+                </div>
+                <div class="item-info">
+                    <span>Smartphones</span>
+                </div>
+            </a>
+
+            <a href="Speakers/speakers.html" class="item-card">
+                <div class="img-box">
+                    <img src="../projectimage/logo/MARSHALL-FRONT-PAGE-2.jpg" alt="Speakers">
+                </div>
+                <div class="item-info">
+                    <span>Speakers</span>
+                </div>
+            </a>
+
+            <a href="../FINAL/Earphone/Earphone/Earphone.html" class="item-card">
+                <div class="img-box">
+                    <img src="../projectimage/logo/category_3.webp" alt="Earphones">
+                </div>
+                <div class="item-info">
+                    <span>Earphones</span>
+                </div>
+            </a>
+
+            <a href="../FINAL/p/headphones.html" class="item-card">
+                <div class="img-box">
+                    <img src="../projectimage/logo/watch-front.jpg" alt="Smart Watches">
+                </div>
+                <div class="item-info">
+                    <span>Smart Watches</span>
+                </div>
+            </a>
+        </div>
+
+        <script>
+            // Simple interaction logic to log which item was clicked
+            document.querySelectorAll('.item-card').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    const category = item.querySelector('span').innerText;
+                    console.log(`User clicked on: ${category}`);
+                });
+            });
+
+        </script>
+    </section>
+
+    <!-- hot pics -->
+    <section class="hot-picks">
+        <style>
+            .hot-picks {
+                padding: 20px;
+                font-family: sans-serif;
+                font-size: 2rem;
+            }
+
+            /* The scrollable container */
+            .slider-container {
+                display: flex;
+                overflow-x: auto;
+                gap: 15px;
+                padding-bottom: 10px;
+                /* Smooth snapping effect */
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+                /* Hides scrollbar for Firefox */
+            }
+
+            /* Hide scrollbar for Chrome/Safari */
+            .slider-container::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Individual Card Styling */
+            .card {
+                flex: 0 0 80%;
+                /* Shows 80% of card width, hinting at the next one */
+                max-width: 300px;
+                position: relative;
+                border-radius: 15px;
+                overflow: hidden;
+                scroll-snap-align: start;
+            }
+
+            .card img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                display: block;
+            }
+
+            /* Text Overlay */
+            .card-label {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+        </style>
+        <h2>Hot Picks</h2>
+        <div class="slider-container">
+            <div class="card">
+                <img src="../projectimage/galaxys25.jpeg" alt="Galaxy S25 Ultra">
+                <div class="card-label">Galaxy S25 Ultra</div>
+            </div>
+            <div class="card">
+                <img src="../FINAL/hot/17 hot .webp" alt="Iphone 17 Pro">
+                <div class="card-label">Iphone 17 Pro</div>
+            </div>
+            <div class="card">
+                <img src="../FINAL/hot/honor hot.avif" alt="Oneplus 15 ">
+                <div class="card-label">Oneplus 15</div>
+            </div>
+            <div class="card">
+                <img src="../FINAL/hot/jbl hot.jpeg" alt="RealMe 16 Pro">
+                <div class="card-label">RealMe 16 Pro</div>
+            </div>
+            <div class="card">
+                <img src="../FINAL/hot/air hot .webp" alt="Google Pixel 10 Pro ">
+                <div class="card-label">Google Pixel 10 Pro</div>
+            </div>
+        </div>
+
+        <script>
+            // Simple function to scroll the container
+            function scrollNext() {
+                const container = document.querySelector('.slider-container');
+                container.scrollBy({ left: 300, behavior: 'smooth' });
+            }
+        </script>
+    </section><br><br>
+
+    <!-- head phones move -->
+    <section>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+            body {
+                font-family: poppins;
+                margin: 0;
+            }
+
+            :root {
+                --item1-transform: translate(-100%, -5%) scale(1.5);
+                --item1-filter: blur(30px);
+                --item1-zIndex: 11;
+                --item1-opacity: 0;
+
+                --item2-transform: translate(0, 0);
+                --item2-filter: blur(0);
+                --item2-zIndex: 10;
+                --item2-opacity: 1;
+
+                --item3-transform: translate(50%, 10%) scale(0.8);
+                --item3-filter: blur(10px);
+                --item3-zIndex: 9;
+                --item3-opacity: 1;
+
+                --item4-transform: translate(90%, 20%) scale(0.5);
+                --item4-filter: blur(30px);
+                --item4-zIndex: 8;
+                --item4-opacity: 1;
+
+                --item5-transform: translate(120%, 30%) scale(0.3);
+                --item5-filter: blur(40px);
+                --item5-zIndex: 7;
+                --item5-opacity: 0;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: #555;
+            }
+
+            .carousel {
+                margin-top: -50px;
+                height: 800px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .carousel .list {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 1140px;
+                max-width: 90%;
+                transform: translateX(-50%);
+                height: 100%;
+            }
+
+            .carousel .list .item {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 70%;
+                height: 100%;
+                font-size: 15px;
+            }
+
+            .carousel .list .item img {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 50%;
+                transform: translateY(-50%);
+            }
+
+            .carousel .list .item .detail {
+                opacity: 0;
+                pointer-events: none;
+            }
+            .carousel .list .item .intro .topic{
+                color: #7900b2d1;
+                font-style: oblique;
+                text-align: center;
+            }
+
+            .carousel .list .item .intro {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 400px;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .carousel .list .item:nth-child(2) .intro {
+                opacity: 1;
+                pointer-events: auto;
+                transition: opacity 0.5s;
+            }
+
+            .carousel .list .item:nth-child(n + 6) {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .carousel .list .item:nth-child(2) {
+                transform: var(--item2-transform);
+                filter: var(--item2-filter);
+                z-index: var(--item2-zIndex);
+                opacity: var(--item2-opacity);
+            }
+
+            .carousel .list .item:nth-child(1) {
+                transform: var(--item1-transform);
+                filter: var(--item1-filter);
+                z-index: var(--item1-zIndex);
+                opacity: var(--item1-opacity);
+                pointer-events: none;
+            }
+
+            .carousel .list .item:nth-child(3) {
+                transform: var(--item3-transform);
+                filter: var(--item3-filter);
+                z-index: var(--item3-zIndex);
+                opacity: var(--item3-opacity);
+            }
+
+            .carousel .list .item:nth-child(4) {
+                transform: var(--item4-transform);
+                filter: var(--item4-filter);
+                z-index: var(--item4-zIndex);
+                opacity: var(--item4-opacity);
+            }
+
+            .carousel .list .item:nth-child(5) {
+                transform: var(--item5-transform);
+                filter: var(--item5-filter);
+                z-index: var(--item5-zIndex);
+                opacity: var(--item5-opacity);
+                pointer-events: none;
+            }
+
+            .arrows {
+                position: absolute;
+                bottom: 10px;
+                width: 1140px;
+                max-width: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .arrows #next,
+            .arrows #prev {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                font-family: monospace;
+                font-size: large;
+                font-weight: bold;
+                border: 1px solid #555;
+            }
+
+            .arrows #back {
+                font-family: poppins;
+                font-weight: 500;
+                border: none;
+                border-bottom: 1px solid #555;
+                letter-spacing: 3px;
+                background-color: transparent;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .carousel .list .item .intro .title {
+                font-size: 2em;
+                line-height: 0.8em;
+            }
+
+            .carousel .list .item .intro .topic {
+                font-size: 4em;
+                font-weight: 500;
+            }
+
+            .carousel .list .item .intro .des {
+                font-size: small;
+            }
+
+            .carousel .list .item .intro .seeMore {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #555;
+                font-family: poppins;
+                font-weight: bold;
+                margin-top: 1.2em;
+                padding: 5px 0;
+            }
+
+            .carousel::before {
+                width: 500px;
+                height: 300px;
+                content: '';
+                background-image: linear-gradient(45deg, #dc422a, blue);
+                position: absolute;
+                z-index: -1;
+                border-radius: 20% 30% 80% 10%;
+                filter: blur(150px);
+                top: 50%;
+                left: 50%;
+                transform: translate(-10%, -50%);
+                transition: 1s;
+            }
+
+            .carousel .list .item:nth-child(2) .intro .title,
+            .carousel .list .item:nth-child(2) .intro .topic,
+            .carousel .list .item:nth-child(2) .intro .des,
+            .carousel .list .item:nth-child(2) .intro .seeMore {
+                opacity: 0;
+                animation: showContent 0.5s 0.7s ease-in-out 1 forwards;
+            }
+
+            @keyframes showContent {
+                from {
+                    transform: translateY(50px);
+                    filter: blur(30px);
+                }
+
+                to {
+                    transform: translateZ(0);
+                    opacity: 1;
+                    filter: blur(0);
+                }
+            }
+
+            .carousel .list .item:nth-child(2) .intro .topic {
+                animation-delay: 0.9s;
+            }
+
+            .carousel .list .item:nth-child(2) .intro .des {
+                animation-delay: 1.1s;
+            }
+
+            .carousel .list .item:nth-child(2) .intro .seeMore {
+                animation-delay: 1.3s;
+            }
+
+            /* NEXT ANIMATIONS */
+            .carousel.next .list .item:nth-child(1) {
+                animation: positionItem2 0.5s ease-in-out forwards;
+            }
+
+            @keyframes positionItem2 {
+                from {
+                    transform: var(--item1-transform);
+                    filter: var(--item1-filter);
+                    z-index: var(--item1-zIndex);
+                    opacity: var(--item1-opacity);
+                }
+
+                /* Moves to Item 2 position */
+            }
+
+            .carousel.next .list .item:nth-child(2) {
+                animation: positionItem3 0.7s ease-in-out forwards;
+            }
+
+            @keyframes positionItem3 {
+                from {
+                    transform: var(--item2-transform);
+                    filter: var(--item2-filter);
+                    z-index: var(--item2-zIndex);
+                    opacity: var(--item2-opacity);
+                }
+            }
+
+            .carousel.next .list .item:nth-child(3) {
+                animation: positionItem4 0.9s ease-in-out forwards;
+            }
+
+            @keyframes positionItem4 {
+                from {
+                    transform: var(--item3-transform);
+                    filter: var(--item3-filter);
+                    z-index: var(--item3-zIndex);
+                    opacity: var(--item3-opacity);
+                }
+            }
+
+            .carousel.next .list .item:nth-child(4) {
+                animation: positionItem5 1.1s ease-in-out forwards;
+            }
+
+            @keyframes positionItem5 {
+                from {
+                    transform: var(--item4-transform);
+                    filter: var(--item4-filter);
+                    z-index: var(--item4-zIndex);
+                    opacity: var(--item4-opacity);
+                }
+            }
+
+            /* PREV ANIMATIONS */
+            .carousel.prev .list .item:nth-child(1) {
+                animation: positionItemPrev1 0.5s ease-in-out forwards;
+            }
+
+            @keyframes positionItemPrev1 {
+                from {
+                    transform: var(--item2-transform);
+                    filter: var(--item2-filter);
+                    z-index: var(--item2-zIndex);
+                    opacity: var(--item2-opacity);
+                }
+            }
+
+            .carousel.prev .list .item:nth-child(2) {
+                animation: positionItemPrev2 0.7s ease-in-out forwards;
+            }
+
+            @keyframes positionItemPrev2 {
+                from {
+                    transform: var(--item3-transform);
+                    filter: var(--item3-filter);
+                    z-index: var(--item3-zIndex);
+                    opacity: var(--item3-opacity);
+                }
+            }
+
+            .carousel.prev .list .item:nth-child(3) {
+                animation: positionItemPrev3 0.9s ease-in-out forwards;
+            }
+
+            @keyframes positionItemPrev3 {
+                from {
+                    transform: var(--item4-transform);
+                    filter: var(--item4-filter);
+                    z-index: var(--item4-zIndex);
+                    opacity: var(--item4-opacity);
+                }
+            }
+
+            .carousel.prev .list .item:nth-child(4) {
+                animation: positionItemPrev4 1.1s ease-in-out forwards;
+            }
+
+            @keyframes positionItemPrev4 {
+                from {
+                    transform: var(--item5-transform);
+                    filter: var(--item5-filter);
+                    z-index: var(--item5-zIndex);
+                    opacity: var(--item5-opacity);
+                }
+            }
+        </style>
+        <div class="carousel">
+            <div class="list">
+                <div class="item">
+                    <img src="../projectimage/hs/h1.jpg">
+                    <div class="intro">
+                        <div class="title">
+                        </div>
+                        <div class="topic">
+                            HEADPHONE
+                        </div>
+                        <div class="des">
+                            <li> “Immerse yourself in high-fidelity audio with these premium over-ear headphones, featuring soft cushions for maximum all-day comfort.”</li>
+                            <li> “Block out the world with advanced noise isolation and enjoy powerful drivers that bring your music to life.”</li>
+                            <li><strong>“1-Year Manufacturer Warranty Included.”</strong></li>
+                            <ul>
+                                <li><strong>Brand:</strong> Premium Audio</li>
+                                <li><strong>Product Type:</strong> Over-Ear Headphones</li>
+                                <li>Large 40mm drivers for cinematic sound</li>
+                                <li>Adjustable headband and memory foam ear cups</li>
+                                <li>Up to 40 hours of wireless playback</li>
+                                <li>Fast charging (10 mins = 3 hours of play)</li>
+                                <li>Foldable design for easy travel</li>
+                                <li>Built-in voice assistant support</li>
+                                <li>Auxiliary port for wired listening mode</li>
+                                <li>Hard-shell carrying case included</li>
+                                <li><strong>Warranty:</strong> 1-Year Manufacturer Warranty Included</li>
+                            </ul>
+
+---
+
+Would you like me to adjust any of the specific technical features (like battery hours or Bluetooth versions) to match a specific model you have in mind?
+                        </div>
+                        <button class="seeMore">
+                            See More &#8599
+                        </button>
+
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            Aerphone LD
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, laudantium nulla
+                            magnam veritatis quidem explicabo. Excepturi in deleniti officiis aliquid eaque deserunt
+                            error velit similique harum tenetur, ipsam magni molestiae ipsum, iusto, amet atque rerum
+                            laborum vitae. Aliquam qui, natus earum illo, hic aspernatur cumque non, dolor odit itaque
+                            ea!
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>used time</p>
+                                <p>6 hours</p>
+                            </div>
+                            <div>
+                                <p>charging port</p>
+                                <p>type_ c</p>
+                            </div>
+                            <div>
+                                <p>compatible</p>
+                                <p>Android</p>
+                            </div>
+                            <div>
+                                <p>Bluetooth</p>
+                                <p>5.3</p>
+                            </div>
+                            <div>
+                                <p>controlled</p>
+                                <p>Touch</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button>ADD TO CART</button>
+                            <button>CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../projectimage/hs/h2.jpg">
+                    <div class="intro">
+                        <div class="title">
+                        </div>
+                        <div class="topic">
+                            Aerphone
+                        </div>
+                        <div class="des">
+                            <li> “Discover incredible sound clarity and active noise cancellation with Anker Soundcore, engineered for pure audio immersion.”</li>
+                            <li> “Enjoy customized EQ settings via the Soundcore app and ultra-fast charging that gives you hours of power in minutes.”</li>
+                            <li><strong>“1-Year Manufacturer Warranty Included.”</strong></li>
+                            <ul>
+                                <li><strong>Brand:</strong> Anker Soundcore</li>
+                                <li><strong>Product Type:</strong> Wireless Earbuds</li>
+                                <li>HearID personalized sound profile</li>
+                                <li>Active Noise Cancelling (ANC) technology</li>
+                                <li>Up to 28 hours of playtime with case</li>
+                                <li>Bluetooth 5.2 for stable connection</li>
+                                <li>6-microphone system for superior call quality</li>
+                                <li>Customizable touch controls via App</li>
+                                <li>IPX5 water resistance</li>
+                                <li>Wireless charging compatible case</li>
+                                <li><strong>Warranty:</strong> 1-Year Manufacturer Warranty Included</li>
+                            </ul>?
+                        </div>
+                        <button class="seeMore">
+                            See More &#8599
+                        </button>
+
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            Aerphone LD
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, laudantium nulla
+                            magnam veritatis quidem explicabo. Excepturi in deleniti officiis aliquid eaque deserunt
+                            error velit similique harum tenetur, ipsam magni molestiae ipsum, iusto, amet atque rerum
+                            laborum vitae. Aliquam qui, natus earum illo, hic aspernatur cumque non, dolor odit itaque
+                            ea!
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>used time</p>
+                                <p>6 hours</p>
+                            </div>
+                            <div>
+                                <p>charging port</p>
+                                <p>type_ c</p>
+                            </div>
+                            <div>
+                                <p>compatible</p>
+                                <p>Android</p>
+                            </div>
+                            <div>
+                                <p>Bluetooth</p>
+                                <p>5.3</p>
+                            </div>
+                            <div>
+                                <p>controlled</p>
+                                <p>Touch</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button>ADD TO CART</button>
+                            <button>CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../projectimage/hs/h3.jpg">
+                    <div class="intro">
+                        <div class="title">
+                        </div>
+                        <div class="topic">
+                            AirPods
+                        </div>
+                        <div class="des">
+                            <li> “Experience the magic of spatial audio and effortless setup with Apple AirPods, delivering high-quality sound and a seamless connection across all your Apple devices.”</li>
+                            <li> “Enjoy up to 30 hours of total listening time with the MagSafe Charging Case, featuring sweat and water resistance for an active lifestyle.”</li>
+                            <li><strong>“1-Year Manufacturer Warranty Included.”</strong></li>
+                            <ul>
+                                <li><strong>Brand:</strong> Apple</li>
+                                <li><strong>Product Type:</strong> Wireless Earbuds</li>
+                                <li>Personalized Spatial Audio with dynamic head tracking</li>
+                                <li>Seamless switching between Apple devices</li>
+                                <li>Long battery life with MagSafe Charging Case</li>
+                                <li>Sweat and water resistant (IPX4)</li>
+                                <li>Dual beamforming microphones for clear calls</li>
+                                <li>Force sensor for music and call control</li>
+                                <li>Quick access to Siri by saying "Hey Siri"</li>
+                                <li>Lightning or MagSafe charging options</li>
+                                <li><strong>Warranty:</strong> 1-Year Manufacturer Warranty Included</li>
+                            </ul>
+                        </div>
+                        <button class="seeMore">
+                            See More &#8599
+                        </button>
+
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            Aerphone LD
+                        </div>
+                        <div class="des">
+                            “Step into premium sound with JBL wireless earbuds — featuring rich bass, noise isolation, and a stylish design built for everyday listening.”
+                            “JBL wireless earbuds deliver high-quality sound, long battery life, and a comfortable fit for music on the go.
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>used time</p>
+                                <p>6 hours</p>
+                            </div>
+                            <div>
+                                <p>charging port</p>
+                                <p>type_ c</p>
+                            </div>
+                            <div>
+                                <p>compatible</p>
+                                <p>Android</p>
+                            </div>
+                            <div>
+                                <p>Bluetooth</p>
+                                <p>5.3</p>
+                            </div>
+                            <div>
+                                <p>controlled</p>
+                                <p>Touch</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button>ADD TO CART</button>
+                            <button>CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../projectimage/hs/h4.jpg">
+                    <div class="intro">
+                        <div class="title">
+                        </div>
+                        <div class="topic">
+                            JBL AIRPODS
+                        </div>
+                        <div class="des">
+                            <li> “Experience powerful JBL sound with crystal-clear calls and all-day comfort in a sleek wireless design.”<br></li>
+                            <li> “Enjoy deep bass, clear audio, and seamless Bluetooth connectivity with JBL wireless earbuds designed for comfort and long-lasting performance.<br></li>
+                            <li><strong>“1-Year Manufacturer Warranty Included.”</strong></li>
+                            <ul>
+                                <li><strong>Brand:</strong> JBL</li>
+                                <li><strong>Product Type:</strong> Wireless Earbuds</li>
+                                <li>Deep bass and clear audio</li>
+                                <li>Bluetooth wireless connection</li>
+                                <li>Long battery life</li>
+                                <li>Lightweight and comfortable design</li>
+                                <li>Built-in microphone for calls</li>
+                                <li>Touch control support</li>
+                                <li>Works with Android and iOS</li>
+                                <li>USB charging case included</li>
+                                <li><strong>Warranty:</strong> 1-Year Manufacturer Warranty Included</li>
+                            </ul>
+
+                        </div>
+                        <button class="seeMore">
+                            See More &#8599
+                        </button>
+
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            Aerphone LD
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, laudantium nulla
+                            magnam veritatis quidem explicabo. Excepturi in deleniti officiis aliquid eaque deserunt
+                            error velit similique harum tenetur, ipsam magni molestiae ipsum, iusto, amet atque rerum
+                            laborum vitae. Aliquam qui, natus earum illo, hic aspernatur cumque non, dolor odit itaque
+                            ea!
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>used time</p>
+                                <p>6 hours</p>
+                            </div>
+                            <div>
+                                <p>charging port</p>
+                                <p>type_ c</p>
+                            </div>
+                            <div>
+                                <p>compatible</p>
+                                <p>Android</p>
+                            </div>
+                            <div>
+                                <p>Bluetooth</p>
+                                <p>5.3</p>
+                            </div>
+                            <div>
+                                <p>controlled</p>
+                                <p>Touch</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button>ADD TO CART</button>
+                            <button>CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../projectimage/hs/h5.jpg">
+                    <div class="intro">
+                        <div class="title">
+                        </div>
+                        <div class="topic">
+                            MAX BAND
+                        </div>
+                        <div class="des">
+                            <li> “Track your fitness goals and stay connected with the Maxband, a sleek wearable designed for precision health monitoring and everyday style.”</li>
+                            <li> “Monitor your heart rate, sleep patterns, and daily steps with a high-definition color display and ultra-long battery life.”</li>
+                            <li><strong>“1-Year Manufacturer Warranty Included.”</strong></li>
+                            <ul>
+                                <li><strong>Brand:</strong> Maxband</li>
+                                <li><strong>Product Type:</strong> Fitness Tracker</li>
+                                <li>Real-time heart rate and SpO2 monitoring</li>
+                                <li>Multi-sport tracking modes</li>
+                                <li>Up to 14 days of battery life on a single charge</li>
+                                <li>Water-resistant design (5ATM)</li>
+                                <li>Smart notifications for calls and texts</li>
+                                <li>High-resolution OLED touch display</li>
+                                <li>Compatible with Android and iOS apps</li>
+                                <li>Magnetic quick-charging cable included</li>
+                                <li><strong>Warranty:</strong> 1-Year Manufacturer Warranty Included</li>
+                            </ul>
+                        </div>
+                        <button class="seeMore">
+                            See More &#8599
+                        </button>
+
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            Aerphone LD
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, laudantium nulla
+                            magnam veritatis quidem explicabo. Excepturi in deleniti officiis aliquid eaque deserunt
+                            error velit similique harum tenetur, ipsam magni molestiae ipsum, iusto, amet atque rerum
+                            laborum vitae. Aliquam qui, natus earum illo, hic aspernatur cumque non, dolor odit itaque
+                            ea!
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>used time</p>
+                                <p>6 hours</p>
+                            </div>
+                            <div>
+                                <p>charging port</p>
+                                <p>type_ c</p>
+                            </div>
+                            <div>
+                                <p>compatible</p>
+                                <p>Android</p>
+                            </div>
+                            <div>
+                                <p>Bluetooth</p>
+                                <p>5.3</p>
+                            </div>
+                            <div>
+                                <p>controlled</p>
+                                <p>Touch</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button>ADD TO CART</button>
+                            <button>CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../projectimage/hs/h6.jpg">
+                    <div class="intro">
+                        <div class="title">
+                            DESIGN SLIDER
+                        </div>
+                        <div class="topic">
+                            Aerphone
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem excepturi optio maiores,
+                            eos, dolorum commodi qui enim, exercitationem nemo explicabo cupiditate at voluptatibus a!
+                            Explicabo accusamus sequi eveniet sit consectetur?
+                        </div>
+                        <button class="seeMore">
+                            See More &#8599
+                        </button>
+
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            Aerphone LD
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, laudantium nulla
+                            magnam veritatis quidem explicabo. Excepturi in deleniti officiis aliquid eaque deserunt
+                            error velit similique harum tenetur, ipsam magni molestiae ipsum, iusto, amet atque rerum
+                            laborum vitae. Aliquam qui, natus earum illo, hic aspernatur cumque non, dolor odit itaque
+                            ea!
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>used time</p>
+                                <p>6 hours</p>
+                            </div>
+                            <div>
+                                <p>charging port</p>
+                                <p>type_ c</p>
+                            </div>
+                            <div>
+                                <p>compatible</p>
+                                <p>Android</p>
+                            </div>
+                            <div>
+                                <p>Bluetooth</p>
+                                <p>5.3</p>
+                            </div>
+                            <div>
+                                <p>controlled</p>
+                                <p>Touch</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button>ADD TO CART</button>
+                            <button>CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../projectimage/hs/h7.jpg">
+                    <div class="intro">
+                        <div class="title">
+                        </div>
+                        <div class="topic">
+                            JBL SPEAKER
+                        </div>
+                        <div class="des">
+                            <li> “Bring the party anywhere with the JBL Flip, featuring bold sound and deep bass in a rugged, waterproof portable design.”</li>
+                            <li> “Connect multiple speakers with PartyBoost and enjoy up to 12 hours of playtime to keep the music going all day long.”</li>
+                            <li><strong>“1-Year Manufacturer Warranty Included.”</strong></li>
+                            <ul>
+                                <li><strong>Brand:</strong> JBL</li>
+                                <li><strong>Product Type:</strong> Portable Bluetooth Speaker</li>
+                                <li>Signature JBL Pro Sound with deep bass</li>
+                                <li>IP67 waterproof and dustproof rating</li>
+                                <li>12 hours of rechargeable battery life</li>
+                                <li>PartyBoost feature for stereo pairing</li>
+                                <li>Durable fabric material and rugged rubber housing</li>
+                                <li>Bluetooth 5.1 wireless streaming</li>
+                                <li>Compact design fits in a cup holder</li>
+                                <li>USB-C charging protection</li>
+                                <li><strong>Warranty:</strong> 1-Year Manufacturer Warranty Included</li>
+                            </ul>
+                        </div>
+                        <button class="seeMore">
+                            See More &#8599
+                        </button>
+
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            Aerphone LD
+                        </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, laudantium nulla
+                            magnam veritatis quidem explicabo. Excepturi in deleniti officiis aliquid eaque deserunt
+                            error velit similique harum tenetur, ipsam magni molestiae ipsum, iusto, amet atque rerum
+                            laborum vitae. Aliquam qui, natus earum illo, hic aspernatur cumque non, dolor odit itaque
+                            ea!
+                        </div>
+                        <div class="specifications">
+                            <div>
+                                <p>used time</p>
+                                <p>6 hours</p>
+                            </div>
+                            <div>
+                                <p>charging port</p>
+                                <p>type_ c</p>
+                            </div>
+                            <div>
+                                <p>compatible</p>
+                                <p>Android</p>
+                            </div>
+                            <div>
+                                <p>Bluetooth</p>
+                                <p>5.3</p>
+                            </div>
+                            <div>
+                                <p>controlled</p>
+                                <p>Touch</p>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <button>ADD TO CART</button>
+                            <button>CHECK OUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button id="prev"> <
+                    </button>
+                        <button id="back"> Go Back &#8599 </button>
+                        <button id="next"> > </button>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+
+                let nextButton = document.getElementById('next');
+                let prevButton = document.getElementById('prev');
+                let backButton = document.getElementById('back');
+                let seeMoreButton = document.querySelectorAll('.seeMore');
+                let carousel = document.querySelector('.carousel');
+                let listHTML = document.querySelector('.carousel .list');
+
+                nextButton.onclick = function () {
+                    showSlider('next');
+                }
+
+                prevButton.onclick = function () {
+                    showSlider('prev');
+                }
+
+                const showSlider = (type) => {
+                    let items = document.querySelectorAll('.carousel .list .item');
+
+                    if (type === 'next') {
+                        listHTML.appendChild(items[0]);
+                    }
+                    else if (type === 'prev') {
+                        listHTML.prepend(items[items.length - 1]);
+                    }
+                }
+
+            });
+        </script>
+    </section>
+
+    <!-- 4 photos show-->
+    <section>
+        <style>
+            .product-grid {
+                align-items: center;
+                display: grid;
+                grid-template-columns: 500px 280px 280px;
+                /* 3 columns */
+                grid-template-rows: auto auto;
+                /* 2 rows */
+                gap: 15px;
+                padding: 100px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .large-card {
+                grid-column: 1 / 2;
+                grid-row: 1 / 3;
+                background-color: #f5f5f5;
+            }
+
+            .wide-card {
+                grid-column: 2 / 4;
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+            }
+
+            .grid-item {
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0px;
+                position: relative;
+            }
+
+            .grid-item img {
+                max-width: 100%;
+                height: auto;
+                align-self: center;
+            }
+
+            .grid-item large-card {
+                width: 400px;
+                height: 400px;
+            }
+
+            .grid-item small-card orange-bg {
+                width: 200px;
+                height: 200px;
+            }
+
+            .grid-item small-card light-bg {
+                width: 200px;
+                height: 200px;
+            }
+
+            .grid-item wide-card teal-bg {
+                width: 200px;
+                height: 200px;
+            }
+
+            .main-bg {
+                background-color: rgb(184, 184, 184);
+            }
+
+            .orange-bg {
+                background-color: rgb(184, 184, 184);
+            }
+
+            .light-bg {
+                background-color: rgb(155, 155, 155);
+            }
+
+            .teal-bg {
+                background-color: rgb(161, 161, 161);
+            }
+
+            @media (max-width: 768px) {
+                .product-grid {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                }
+
+                .large-card,
+                .wide-card {
+                    grid-column: auto;
+                    grid-row: auto;
+                }
+            }
+        </style>
+
+        <div class="product-grid">
+            <div class="grid-item large-card main-bg">
+                <div class="content">
+                    <img src="../projectimage/4 show/a1.jpg" Titan Black Phone>
+                </div>
+            </div>
+
+            <div class="grid-item small-card orange-bg">
+                <img src="../projectimage/4 show/a2.jpg" alt="Fire TV">
+            </div>
+
+            <div class="grid-item small-card light-bg">
+                <img src="../projectimage/4 show/a3.jpg" alt="Pixel 9">
+            </div>
+
+            <div class="grid-item wide-card teal-bg">
+                <div class="content">
+
+                    <img src="../projectimage/4 show/a4.jpg" alt="Apple Watch">
+                </div>
+            </div>
+
+            <script>
+                const cards = document.querySelectorAll('.grid-item');
+
+                cards.forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        card.style.transform = 'translateY(-5px)';
+                        card.style.transition = '0.3s ease';
+                        card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+                    });
+
+                    card.addEventListener('mouseleave', () => {
+                        card.style.transform = 'translateY(0)';
+                        card.style.boxShadow = 'none';
+                    });
+                });
+            </script>
+    </section>
+
+    <!--Running line-->
+    <section>
+        <style>
+            #marq {
+                background-size: cover;
+                font-size: 60px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgba(0, 0, 0, 0.344);
+                font-weight: bold;
+                width: 100%;
+                height: 100px;
+                text-align: center;
+            }
+        </style>
+        <div class="marquee" id="marq">
+            <p>MOBILE-TECH (PVT) LTD<br>
+                THINK TECH & THINK SMART</P>
+        </div><br>
+    </section>
+
+    <!-- brand logos-->
+    <section class="brand-section">
+        <style>
+            .full-width {
+                background-color: #f8f9fa;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                height: fit-content;
+                width: auto;
+            }
+
+            .brand-section {
+                padding: 80px 50px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .brand-section h3 {
+                font-size: 28px;
+                font-weight: 500;
+                margin-bottom: 40px;
+                color: #333;
+            }
+
+            .brand-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+
+            .brand-item-single {
+                background: #ffffff;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease;
+            }
+
+            .brand-item-single:hover {
+                transform: translateY(-5px);
+            }
+
+            .brand-item-single img {
+                max-width: 200%;
+                max-height: 80px;
+                object-fit: contain;
+            }
+
+            .full-width {
+                grid-column: span 4;
+            }
+
+            @media (max-width: 768px) {
+                .brand-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                .full-width {
+                    grid-column: span 2;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .brand-grid {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .full-width {
+                    grid-column: span 1;
+                    width: 100px;
+                }
+            }
+        </style>
+        <h2><i><b>Authorized Dealer for Leading Mobile Brands</b></i></h2>
+
+        <div class="brand-grid">
+            <div class="brand-item-single">
+                <a href="../FINAL/p/apple.html">
+                <img src="../projectimage/logo/apple-logo.webp" alt="Apple"> </a>
+            </div>
+            <div class="brand-item-single">
+                <a href="../FINAL/p/samsung.html">
+                <img src="../projectimage/logo/samsung-logo.webp" width="80%" height="60%" alt="Samsung"></a>
+            </div>
+            <div class="brand-item-single">
+                <a href="../FINAL/p/redme.html">
+                <img src="../projectimage/logo/mi-logo.webp" alt="Xiaomi"></a>
+            </div>
+            <div class="brand-item-single">
+                <a href="../FINAL/p/oppo.html">
+                <img src="../projectimage/logo/oppo-logo.webp" alt="Oppo"></a>
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/huawei-logo.webp" alt="Huawei">
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/poco-logo.webp" alt="Poco">
+            </div>
+            <div class="brand-item-single">
+                <a href="../FINAL/p/realme.html">
+                <img src="../projectimage/logo/realme-logo.webp" alt="Realme"></a>
+            </div>
+            <div class="brand-item-single">
+                <img src="../projectimage/logo/alcatel-logo.webp" alt="Alcatel">
+            </div>
+            <div class="brand-item-single full-width">
+                <img src="../projectimage/logo/kingston-logo.webp" alt="Kingston">
+            </div>
+        </div>
+    </section>
+
+    <!-- About us -->
+    <section id="about-section" >
+        <style>
+            .body {
+            
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer {
+                display: flex;
+                justify-content: center;
+                width: 100%;             /* This makes it span the full page width */
+                padding: 40px 0;         /* 40px top/bottom, 0 left/right */
+                background: #ffffff;
+                font-family: Arial, sans-serif;
+                box-sizing: border-box;  /* Ensures padding doesn't make the footer wider than 100% */
+            }
+
+            .footer-left,
+            .footer-middle,
+            .footer-right {
+                flex: 1;
+                padding: 10px;
+            }
+
+            .footer-left p {
+                line-height: 1.4;
+                text-align: left;
+                width: 80%;
+            }
+
+            .logo {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+            }
+
+            .footer-center {
+                text-align: center;
+            }
+
+            .pay {
+                width: 100px;
+                margin: 40px 0;
+                display: block;
+                align-items: center;
+            }
+
+            .social-icons {
+                width: 120px;
+                height: 70px;
+                margin: 20px 0;
+                align-items: center;
+                display: block;
+            }
+
+            .footer-middle h3 {
+                margin-bottom: 10px;
+                margin-top: 80px;
+                font-size: 22px;
+            }
+
+            .footer-middle p {
+                margin: 2px 0;
+                font-size: 15px;
+            }
+
+            .footer-right h3 {
+                margin-bottom: 10px;
+                margin-top: 80px;
+                font-size: 22px;
+            }
+
+            .footer-right p {
+                margin: 2px 0;
+                font-size: 15px;
+            }
+        </style>
+
+        <footer class="footer">
+
+            <!-- Left side -->
+            <div class="footer-left">
+                <img src="../projectimage/logo/logo.jpg.jpeg" class="logo">
+
+                <p>
+                    <b>MOBILETECH</b> is Sri Lanka's leading mobile phone store, offering a vast range
+                    of smartphones, accessories, and repair services. We partner with top brands
+                    like Apple, Samsung, Xiaomi and more. Enjoy a seamless shopping experience
+                    with the finest selection of high-quality devices to suit all budgets.
+                </p>
+                <img src="../projectimage/4 show/visa.png" class="pay">
+                <img src="../projectimage/4 show/so.jpg" class="social-icons">
+            </div>
+
+            <div class="footer-middle">
+                <h3>Matara</h3>
+                <p>No. 42, Beach Road, Matara</p>
+                <p><b>070 871 07 14</b></p>
+
+                <p>No. 30, Weligama Road, Matara</p>
+                <p><b>077 544 67 90</b></p>
+
+                <h3>Colombo</h3>
+                <p>No. 39, High Level Road, Colombo</p>
+                <p><b>071 901 84 11</b></p>
+            </div>
+            <div class="footer-right">
+                <h3>Sales and Support Hot Line</h3>
+                <p>+94 701 425 478</p>
+                <p>+94 771 598 046</p>
+
+                <h3>Repair Center</h3>
+                <p>+94 701 280 031</p>
+                <p>+94 746 023 134</p>
+            </div>
+
+        </footer>
+    </section>
+
+</body>
+
+</html>
